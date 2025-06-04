@@ -8,5 +8,9 @@ namespace Taller_Industrial_Brenes_Web.Controllers
         {
             return View();
         }
+        public IActionResult RecuperarContrasenna()
+        {
+            return View();
+        }
     }
 }
