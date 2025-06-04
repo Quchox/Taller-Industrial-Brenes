@@ -1,2 +1,20 @@
-# Auto detect text files and perform LF normalization
+# Normaliza todos los finales de línea
 * text=auto
+
+# Fuerza CRLF para archivos comunes en proyectos ASP.NET
+*.cs text eol=crlf
+*.cshtml text eol=crlf
+*.config text eol=crlf
+*.json text eol=crlf
+*.js text eol=crlf
+*.css text eol=crlf
+*.scss text eol=crlf
+
+# Archivos binarios (no tocar)
+*.ico binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+
