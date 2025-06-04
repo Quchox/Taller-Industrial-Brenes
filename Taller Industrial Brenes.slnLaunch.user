@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

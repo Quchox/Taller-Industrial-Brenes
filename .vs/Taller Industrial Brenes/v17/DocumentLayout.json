@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Progra avanzada\\Taller Industrial Brenes\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-04T19:58:10.475Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

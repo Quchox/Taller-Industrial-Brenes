@@ -1,0 +1,32 @@
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\appsettings.Development.json
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\appsettings.json
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.staticwebassets.endpoints.json
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.exe
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.deps.json
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.runtimeconfig.json
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.pdb
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.csproj.AssemblyReference.cache
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.AssemblyInfoInputs.cache
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.AssemblyInfo.cs
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.csproj.CoreCompileInputs.cache
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.MvcApplicationPartsAssemblyInfo.cs
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.MvcApplicationPartsAssemblyInfo.cache
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.sourcelink.json
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\scopedcss\bundle\Taller Industrial Brenes API.styles.css
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets.build.json
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets.development.json
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller I.ED638EB5.Up2Date
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\refint\Taller Industrial Brenes API.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.pdb
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.genruntimeconfig.cache
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\ref\Taller Industrial Brenes API.dll
