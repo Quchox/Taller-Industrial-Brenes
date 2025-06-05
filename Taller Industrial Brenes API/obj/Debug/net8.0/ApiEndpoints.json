@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "Taller_Industrial_Brenes_API.Controllers.AutenticacionController",
+    "Method": "EnviarRecuperacion",
+    "RelativePath": "Autenticacion/EnviarRecuperacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.AutenticacionController",
     "Method": "Login",
     "RelativePath": "Autenticacion/Login",
     "HttpMethod": "POST",
