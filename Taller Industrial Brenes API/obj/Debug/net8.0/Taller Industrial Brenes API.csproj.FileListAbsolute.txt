@@ -30,3 +30,10 @@ D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Deb
 D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.pdb
 D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.genruntimeconfig.cache
 D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\ref\Taller Industrial Brenes API.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Dapper.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+D:\Progra avanzada\Taller Industrial Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
