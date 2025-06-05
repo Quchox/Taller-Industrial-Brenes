@@ -1,0 +1,58 @@
+USE [TallerBrenes]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[ActualizarPerfil]
+    @UsuarioID            BIGINT,
+    @Identificacion       VARCHAR(15),
+    @Nombre               VARCHAR(50),
+    @ApellidoPaterno      VARCHAR(50),
+    @ApellidoMaterno      VARCHAR(50),
+    @Correo               VARCHAR(100),
+    @Contrasenna          VARCHAR(255),
+    @TieneContrasennaTemp BIT          = NULL,
+    @FechaVencimientoTemp DATETIME     = NULL,
+    @Estado               BIT,
+    @RolID                BIGINT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- 1. Verificar que el correo no esté en uso por otro usuario
+    IF EXISTS (
+        SELECT 1
+        FROM Usuarios
+        WHERE Correo = @Correo
+          AND UsuarioID <> @UsuarioID
+    )
+    BEGIN
+        RAISERROR('El correo proporcionado ya está registrado por otro usuario.', 16, 1);
+        RETURN;
+    END
+
+    -- 2. Ejecutar el UPDATE
+    UPDATE Usuarios
+    SET
+        Identificacion       = @Identificacion,
+        Nombre               = @Nombre,
+        ApellidoPaterno      = @ApellidoPaterno,
+        ApellidoMaterno      = @ApellidoMaterno,
+        Correo               = @Correo,
+        Contrasenna          = @Contrasenna,
+        TieneContrasennaTemp = @TieneContrasennaTemp,
+        FechaVencimientoTemp = @FechaVencimientoTemp,
+        Estado               = @Estado,
+        RolID                = @RolID
+    WHERE UsuarioID = @UsuarioID;
+
+    IF @@ROWCOUNT = 0
+    BEGIN
+        RAISERROR('No se encontró ningún usuario con UsuarioID = %d.', 16, 1, @UsuarioID);
+    END
+END
+GO
