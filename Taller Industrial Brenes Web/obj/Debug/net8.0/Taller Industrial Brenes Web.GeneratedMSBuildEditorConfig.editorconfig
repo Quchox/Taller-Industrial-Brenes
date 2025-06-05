@@ -20,6 +20,18 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Autenticacion/RecuperarContrasenna.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0ZW50aWNhY2lvblxSZWN1cGVyYXJDb250cmFzZW5uYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Cuenta/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Cuenta/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXFJlZ2lzdHJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

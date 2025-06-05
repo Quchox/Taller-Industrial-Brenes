@@ -1,7 +1,6 @@
-﻿@using Taller_Industrial_Brenes_Web.Models
-@model Taller_Industrial_Brenes_Web.Models.UsuarioModel
+﻿@model Taller_Industrial_Brenes_Web.Models.LoginRequestModel
 @{
-    ViewData["Title"] = "Recuperar Contraseña";
+    ViewData["Title"] = "Iniciar Sesión";
 }
 
 <!DOCTYPE html>
@@ -18,6 +17,7 @@
 
 <body class="bg-gradient-primary">
     <div class="container">
+
         <div class="row justify-content-center">
             <div class="col-xl-10 col-lg-12 col-md-9">
                 <div class="card o-hidden border-0 shadow-lg my-5">
@@ -27,8 +27,7 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Recuperar Contraseña</h1>
-                                        <h1 class="h6 text-gray-600 mb-4">Ingrese su correo y le enviaremos un código.</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
 
                                     @if (ViewBag.Error != null)
@@ -36,17 +35,25 @@
                                         <div class="alert alert-danger text-center">@ViewBag.Error</div>
                                     }
 
-                                    <form asp-action="RecuperarContrasenna" asp-controller="Autenticacion" method="post">
+                                    <form asp-action="Login" asp-controller="Cuenta" method="post">
                                         <div class="form-group">
                                             <input asp-for="Correo" class="form-control form-control-user" placeholder="Enter Email Address..." />
                                             <span asp-validation-for="Correo" class="text-danger"></span>
                                         </div>
-                                        <button type="submit" class="btn btn-primary btn-user btn-block">Enviar Código</button>
+                                        <div class="form-group">
+                                            <input asp-for="Contrasenna" type="password" class="form-control form-control-user" placeholder="Password" />
+                                            <span asp-validation-for="Contrasenna" class="text-danger"></span>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">Login</button>
                                     </form>
 
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" asp-controller="Cuenta" asp-action="Login">Already have an account? Login!</a>
+                                        <a class="small" asp-controller="Autenticacion" asp-action="RecuperarContrasenna">Forgot Password?</a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="small" asp-controller="Cuenta" asp-action="Registro">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>
@@ -62,3 +69,5 @@
     <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="~/js/sb-admin-2.min.js"></script>
 </body>
+
+</html>
