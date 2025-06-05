@@ -56,6 +56,31 @@ namespace Taller_Industrial_Brenes_Web.Controllers
                 return View();
             }
         }
-    
+        [HttpPost]
+        public async Task<IActionResult> ActualizarPerfil(UsuarioModel model)
+        {
+            var token = HttpContext.Session.GetString("Token");
+
+            if (string.IsNullOrEmpty(token))
+                return RedirectToAction("Login", "Autenticacion");
+
+            using var cliente = _httpClient.CreateClient();
+            cliente.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
+
+            var url = _config["Variables:urlApi"] + "Autenticacion/ActualizarPerfil";
+
+            var response = await cliente.PutAsJsonAsync(url, model);
+
+            if (response.IsSuccessStatusCode)
+            {
+                TempData["Msj"] = "Perfil actualizado correctamente.";
+            }
+            else
+            {
+                ViewBag.Msj = "No se pudo actualizar el perfil.";
+            }
+
+            return RedirectToAction("Index", "Perfil");
+        }
     }
 }

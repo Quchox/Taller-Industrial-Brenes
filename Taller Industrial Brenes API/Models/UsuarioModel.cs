@@ -14,5 +14,4 @@
         public bool Estado { get; set; }
         public long RolID { get; set; }
     }
-
 }
