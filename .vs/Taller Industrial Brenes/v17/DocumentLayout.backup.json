@@ -3,8 +3,64 @@
   "WorkspaceRootPath": "D:\\Progra avanzada\\Taller Industrial Brenes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\views\\cuenta\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\views\\cuenta\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\views\\cuenta\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\views\\cuenta\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\views\\autenticacion\\recuperarcontrasenna.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\views\\autenticacion\\recuperarcontrasenna.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes api\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\models\\loginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\models\\loginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\controllers\\autenticacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\controllers\\autenticacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes api\\controllers\\autenticacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\controllers\\autenticacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes api\\models\\loginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\models\\loginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,6 +75,188 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Registro.cshtml",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Views\\Cuenta\\Registro.cshtml",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Cuenta\\Registro.cshtml",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Views\\Cuenta\\Registro.cshtml",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Cuenta\\Registro.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T07:08:44.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Views\\Cuenta\\Login.cshtml",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Cuenta\\Login.cshtml",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Views\\Cuenta\\Login.cshtml",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Cuenta\\Login.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T07:02:48.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RecuperarContrasenna.cshtml",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Views\\Autenticacion\\RecuperarContrasenna.cshtml",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Autenticacion\\RecuperarContrasenna.cshtml",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Views\\Autenticacion\\RecuperarContrasenna.cshtml",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Autenticacion\\RecuperarContrasenna.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T07:02:27.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginRequestModel.cs",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Models\\LoginRequestModel.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Models\\LoginRequestModel.cs",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Models\\LoginRequestModel.cs",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Models\\LoginRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T06:57:37.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioModel.cs",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Models\\UsuarioModel.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Models\\UsuarioModel.cs",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Models\\UsuarioModel.cs",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Models\\UsuarioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T06:57:27.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AutenticacionController.cs",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Controllers\\AutenticacionController.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Controllers\\AutenticacionController.cs",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Controllers\\AutenticacionController.cs",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Controllers\\AutenticacionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T06:55:49.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CuentaController.cs",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Controllers\\CuentaController.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Controllers\\CuentaController.cs",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Controllers\\CuentaController.cs",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Controllers\\CuentaController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwCIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T06:55:08.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T06:54:59.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Program.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Program.cs",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Program.cs",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T06:53:57.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\appsettings.json",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\appsettings.json",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-05T03:06:51.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioModel.cs",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\Models\\UsuarioModel.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Models\\UsuarioModel.cs",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\Models\\UsuarioModel.cs",
+              "RelativeToolTip": "Taller Industrial Brenes API\\Models\\UsuarioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T03:01:58.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginRequestModel.cs",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\Models\\LoginRequestModel.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Models\\LoginRequestModel.cs",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\Models\\LoginRequestModel.cs",
+              "RelativeToolTip": "Taller Industrial Brenes API\\Models\\LoginRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T06:46:55.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\appsettings.json",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\appsettings.json",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\appsettings.json",
+              "RelativeToolTip": "Taller Industrial Brenes API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-05T03:06:45.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AutenticacionController.cs",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\Controllers\\AutenticacionController.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\AutenticacionController.cs",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\Controllers\\AutenticacionController.cs",
+              "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\AutenticacionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T03:02:28.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "site.js",
               "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\wwwroot\\js\\site.js",

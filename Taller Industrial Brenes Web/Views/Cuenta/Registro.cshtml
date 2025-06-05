@@ -1,0 +1,88 @@
+﻿@model Taller_Industrial_Brenes_Web.Models.UsuarioModel
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Registro</title>
+
+    <link href="~/css/sb-admin-2.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700,900" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-primary">
+    <div class="container">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                            </div>
+
+                            @if (ViewBag.Error != null)
+                            {
+                                <div class="alert alert-danger text-center">@ViewBag.Error</div>
+                            }
+
+                            <form asp-action="Registro" asp-controller="Cuenta" method="post">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3">
+                                        <input asp-for="Nombre" class="form-control form-control-user" placeholder="First Name" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input asp-for="ApellidoPaterno" class="form-control form-control-user" placeholder="Last Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3">
+                                        <input asp-for="ApellidoMaterno" class="form-control form-control-user" placeholder="Second Last Name" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input asp-for="Identificacion" class="form-control form-control-user" placeholder="ID Number" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input asp-for="Correo" class="form-control form-control-user" placeholder="Email Address" />
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3">
+                                        <input asp-for="Contrasenna" type="password" class="form-control form-control-user" placeholder="Password" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control form-control-user" placeholder="Repeat Password" />
+                                    </div>
+                                </div>
+                                <input type="hidden" asp-for="RolID" value="1" />
+
+                                <button type="submit" class="btn btn-primary btn-user btn-block">Register Account</button>
+                            </form>
+
+                            <hr>
+                            <div class="text-center">
+                                <a class="small" asp-controller="Cuenta" asp-action="Login">Already have an account? Login!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/js/sb-admin-2.min.js"></script>
+</body>
+
+</html>
+
