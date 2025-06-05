@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using Dapper;
 using Taller_Industrial_Brenes_API.Models;
 using Microsoft.Extensions.Configuration;
+using System.Data;
 
 namespace Taller_Industrial_Brenes_API.Controllers
 {
@@ -106,6 +107,81 @@ namespace Taller_Industrial_Brenes_API.Controllers
                 });
             }
         }
+       
+            
+
+            [HttpPut("ActualizarPerfil")]
+            public async Task<IActionResult> ActualizarPerfil([FromBody] UsuarioModel model)
+            {
+                // 1. Validar que venga un model válido
+                if (model == null || model.UsuarioID <= 0)
+                    return BadRequest("Datos de usuario inválidos.");
+
+                try
+                {
+                    // 2. Leer la cadena de conexión "ConexionBD" desde appsettings.json
+                    var connectionString = _config.GetConnectionString("ConexionBD");
+                    if (string.IsNullOrWhiteSpace(connectionString))
+                    {
+                        // Si no se encontró la cadena, devolvemos un error claro
+                        return StatusCode(500, new { mensaje = "No se encontró la cadena de conexión 'ConexionBD' en appsettings.json." });
+                    }
+
+                    // 3. Crear y configurar el comando para llamar al Stored Procedure
+                    using (var connection = new SqlConnection(connectionString))
+                    using (var command = new SqlCommand("ActualizarPerfil", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        // 4. Agregar todos los parámetros que el SP necesita
+                        command.Parameters.AddWithValue("@UsuarioID", model.UsuarioID);
+                        command.Parameters.AddWithValue("@Identificacion", model.Identificacion);
+                        command.Parameters.AddWithValue("@Nombre", model.Nombre);
+                        command.Parameters.AddWithValue("@ApellidoPaterno", model.ApellidoPaterno);
+                        command.Parameters.AddWithValue("@ApellidoMaterno", model.ApellidoMaterno);
+                        command.Parameters.AddWithValue("@Correo", model.Correo);
+                        command.Parameters.AddWithValue("@Contrasenna", model.Contrasenna);
+
+                        // Parámetros opcionales (pueden ser NULL)
+                        if (model.TieneContrasennaTemp.HasValue)
+                            command.Parameters.AddWithValue("@TieneContrasennaTemp", model.TieneContrasennaTemp.Value);
+                        else
+                            command.Parameters.AddWithValue("@TieneContrasennaTemp", DBNull.Value);
+
+                        if (model.FechaVencimientoTemp.HasValue)
+                            command.Parameters.AddWithValue("@FechaVencimientoTemp", model.FechaVencimientoTemp.Value);
+                        else
+                            command.Parameters.AddWithValue("@FechaVencimientoTemp", DBNull.Value);
+
+                        command.Parameters.AddWithValue("@Estado", model.Estado);
+                        command.Parameters.AddWithValue("@RolID", model.RolID);
+
+                        // 5. Abrir la conexión y ejecutar el procedimiento
+                        await connection.OpenAsync();
+                        int filasAfectadas = await command.ExecuteNonQueryAsync();
+
+                        // 6. Si no se actualizó ninguna fila, devolver 404 Not Found
+                        if (filasAfectadas == 0)
+                            return NotFound(new { mensaje = $"No se encontró ningún usuario con ID = {model.UsuarioID}" });
+
+                        // 7. Si todo salió bien, devolvemos No Content (204)
+                        return NoContent();
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    // 8. Si el SP lanzó RAISERROR (por correo duplicado), capturarlo aquí
+                    return BadRequest(new { mensaje = ex.Message });
+                }
+                catch (Exception exGeneral)
+                {
+                    // 9. Cualquier otro error inesperado
+                    return StatusCode(500, new { mensaje = "Error interno al actualizar perfil.", detalle = exGeneral.Message });
+                }
+            }
+        }
     }
-}
+
+
+
 

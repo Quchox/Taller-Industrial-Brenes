@@ -641,23 +641,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Qucho\\.nuget\\packages\\": {},
+    "C:\\Users\\aronm\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
+      "projectUniqueName": "C:\\Users\\aronm\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
       "projectName": "Taller Industrial Brenes API",
-      "projectPath": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
-      "packagesPath": "C:\\Users\\Qucho\\.nuget\\packages\\",
-      "outputPath": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\obj\\",
+      "projectPath": "C:\\Users\\aronm\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
+      "packagesPath": "C:\\Users\\aronm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aronm\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Qucho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aronm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -666,7 +666,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
