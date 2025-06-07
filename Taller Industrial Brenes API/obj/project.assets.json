@@ -641,23 +641,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aronm\\.nuget\\packages\\": {},
+    "C:\\Users\\branb\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aronm\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
+      "projectUniqueName": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
       "projectName": "Taller Industrial Brenes API",
-      "projectPath": "C:\\Users\\aronm\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
-      "packagesPath": "C:\\Users\\aronm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aronm\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\obj\\",
+      "projectPath": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
+      "packagesPath": "C:\\Users\\branb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\aronm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\branb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -666,6 +666,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -684,7 +685,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -722,7 +723,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
