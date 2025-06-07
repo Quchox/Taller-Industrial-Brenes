@@ -1,0 +1,64 @@
+USE [TallerBrenes]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[ObtenerTodosUsuarios]
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        u.UsuarioID,
+        u.Identificacion,
+        u.Nombre,
+        u.ApellidoPaterno,
+        u.ApellidoMaterno,
+        u.Correo,
+        u.TieneContrasennaTemp,
+        u.FechaVencimientoTemp,
+        u.Estado,
+        u.RolID,
+        r.NombreRol
+    FROM dbo.Usuarios AS u
+    INNER JOIN dbo.Roles    AS r
+        ON u.RolID = r.RolID
+    ORDER BY u.UsuarioID;
+END
+GO
+
+-- ==================================================================
+
+Use [TallerBrenes]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[ObtenerUsuarioPorId]
+    @UsuarioID BIGINT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        u.UsuarioID,
+        u.Identificacion,
+        u.Nombre,
+        u.ApellidoPaterno,
+        u.ApellidoMaterno,
+        u.Correo,
+        u.TieneContrasennaTemp,
+        u.FechaVencimientoTemp,
+        u.Estado,
+        u.RolID,
+        r.NombreRol
+    FROM dbo.Usuarios AS u
+    INNER JOIN dbo.Roles    AS r
+        ON u.RolID = r.RolID
+    WHERE u.UsuarioID = @UsuarioID;
+END
+GO
+GO
