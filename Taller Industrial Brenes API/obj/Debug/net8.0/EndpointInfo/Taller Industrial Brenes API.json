@@ -98,10 +98,45 @@
         }
       }
     },
-    "/Autenticacion/ActualizarPerfil": {
+    "/Usuario": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Usuario/{id}": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Usuario/ActualizarPerfil": {
       "put": {
         "tags": [
-          "Autenticacion"
+          "Usuario"
         ],
         "requestBody": {
           "content": {

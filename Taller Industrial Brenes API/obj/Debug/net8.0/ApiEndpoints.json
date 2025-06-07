@@ -1,22 +1,6 @@
 [
   {
     "ContainingType": "Taller_Industrial_Brenes_API.Controllers.AutenticacionController",
-    "Method": "ActualizarPerfil",
-    "RelativePath": "Autenticacion/ActualizarPerfil",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "Taller_Industrial_Brenes_API.Models.UsuarioModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.AutenticacionController",
     "Method": "EnviarRecuperacion",
     "RelativePath": "Autenticacion/EnviarRecuperacion",
     "HttpMethod": "POST",
@@ -57,6 +41,48 @@
     "Parameters": [
       {
         "Name": "nuevo",
+        "Type": "Taller_Industrial_Brenes_API.Models.UsuarioModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.UsuarioController",
+    "Method": "ObtenerUsuarios",
+    "RelativePath": "Usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.UsuarioController",
+    "Method": "GetById",
+    "RelativePath": "Usuario/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.UsuarioController",
+    "Method": "ActualizarPerfil",
+    "RelativePath": "Usuario/ActualizarPerfil",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
         "Type": "Taller_Industrial_Brenes_API.Models.UsuarioModel",
         "IsRequired": true
       }

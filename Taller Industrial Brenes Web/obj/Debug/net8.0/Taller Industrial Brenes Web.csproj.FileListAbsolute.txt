@@ -28,3 +28,38 @@ C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes We
 C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.pdb
 C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.genruntimeconfig.cache
 C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\ref\Taller Industrial Brenes Web.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\bin\Debug\net8.0\appsettings.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\bin\Debug\net8.0\Taller Industrial Brenes Web.staticwebassets.runtime.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\bin\Debug\net8.0\Taller Industrial Brenes Web.staticwebassets.endpoints.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\bin\Debug\net8.0\Taller Industrial Brenes Web.exe
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\bin\Debug\net8.0\Taller Industrial Brenes Web.deps.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\bin\Debug\net8.0\Taller Industrial Brenes Web.runtimeconfig.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\bin\Debug\net8.0\Taller Industrial Brenes Web.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\bin\Debug\net8.0\Taller Industrial Brenes Web.pdb
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.AssemblyInfoInputs.cache
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.AssemblyInfo.cs
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.csproj.CoreCompileInputs.cache
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.RazorAssemblyInfo.cache
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.RazorAssemblyInfo.cs
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.sourcelink.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\scopedcss\bundle\Taller Industrial Brenes Web.styles.css
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\scopedcss\projectbundle\Taller Industrial Brenes Web.bundle.scp.css
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\staticwebassets\msbuild.Taller Industrial Brenes Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\staticwebassets\msbuild.Taller Industrial Brenes Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\staticwebassets\msbuild.build.Taller Industrial Brenes Web.props
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Taller Industrial Brenes Web.props
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Taller Industrial Brenes Web.props
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\refint\Taller Industrial Brenes Web.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.pdb
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\Taller Industrial Brenes Web.genruntimeconfig.cache
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes Web\obj\Debug\net8.0\ref\Taller Industrial Brenes Web.dll
