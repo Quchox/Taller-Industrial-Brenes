@@ -1,0 +1,54 @@
+CREATE PROCEDURE CrearHorario
+    @UsuarioID BIGINT,
+    @DiaSemana VARCHAR(10),
+    @HoraInicio TIME,
+    @HoraFin TIME,
+    @Observaciones VARCHAR(255)
+AS
+BEGIN
+    -- Validar que el usuario sea un empleado
+    IF NOT EXISTS (
+        SELECT 1 FROM Usuarios WHERE UsuarioID = @UsuarioID AND RolID = 2 -- Suponiendo que 2 = Empleado
+    )
+    BEGIN
+        RAISERROR('El usuario no es un empleado.', 16, 1)
+        RETURN
+    END
+
+    -- Insertar el horario
+    INSERT INTO Horarios (UsuarioID, DiaSemana, HoraInicio, HoraFin, Observaciones)
+    VALUES (@UsuarioID, @DiaSemana, @HoraInicio, @HoraFin, @Observaciones)
+END
+-- ==============================
+CREATE PROCEDURE ObtenerHorariosPorUsuario
+    @UsuarioID BIGINT
+AS
+BEGIN
+    SELECT HorarioID, DiaSemana, HoraInicio, HoraFin, Observaciones
+    FROM Horarios
+    WHERE UsuarioID = @UsuarioID
+END
+-- ==============================
+CREATE PROCEDURE ActualizarHorario
+    @HorarioID INT,
+    @DiaSemana VARCHAR(10),
+    @HoraInicio TIME,
+    @HoraFin TIME,
+    @Observaciones VARCHAR(255)
+AS
+BEGIN
+    UPDATE Horarios
+    SET DiaSemana = @DiaSemana,
+        HoraInicio = @HoraInicio,
+        HoraFin = @HoraFin,
+        Observaciones = @Observaciones
+    WHERE HorarioID = @HorarioID
+END
+-- ==============================
+CREATE PROCEDURE EliminarHorario
+    @HorarioID INT
+AS
+BEGIN
+    DELETE FROM Horarios
+    WHERE HorarioID = @HorarioID
+END
