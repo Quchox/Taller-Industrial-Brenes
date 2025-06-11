@@ -1,4 +1,4 @@
-CREATE PROCEDURE CrearHorario
+ALTER PROCEDURE CrearHorario
     @UsuarioID BIGINT,
     @DiaSemana VARCHAR(10),
     @HoraInicio TIME,
@@ -6,19 +6,19 @@ CREATE PROCEDURE CrearHorario
     @Observaciones VARCHAR(255)
 AS
 BEGIN
-    -- Validar que el usuario sea un empleado
+    -- Validar que el usuario tenga rol de Empleado (RolID = 3)
     IF NOT EXISTS (
-        SELECT 1 FROM Usuarios WHERE UsuarioID = @UsuarioID AND RolID = 2 -- Suponiendo que 2 = Empleado
+        SELECT 1 FROM Usuarios WHERE UsuarioID = @UsuarioID AND RolID = 3
     )
     BEGIN
         RAISERROR('El usuario no es un empleado.', 16, 1)
         RETURN
     END
 
-    -- Insertar el horario
     INSERT INTO Horarios (UsuarioID, DiaSemana, HoraInicio, HoraFin, Observaciones)
     VALUES (@UsuarioID, @DiaSemana, @HoraInicio, @HoraFin, @Observaciones)
 END
+
 -- ==============================
 CREATE PROCEDURE ObtenerHorariosPorUsuario
     @UsuarioID BIGINT
