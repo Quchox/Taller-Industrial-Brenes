@@ -21,6 +21,7 @@ namespace Taller_Industrial_Brenes_API.Controllers
         }
 
         [HttpGet]
+        [Route("/ObtenerUsuarios")]
         public async Task<IActionResult> ObtenerUsuarios()
         {
             try
@@ -73,8 +74,8 @@ namespace Taller_Industrial_Brenes_API.Controllers
         }
 
 
-        [HttpGet("{id:long}")]
-        public async Task<IActionResult> GetById(long id)
+        [HttpGet("/ObtenerPorID{id:long}")]
+        public async Task<IActionResult> ObtenerPorID(long id)
         {
             if (id <= 0)
                 return BadRequest("El ID de usuario debe ser mayor que cero.");

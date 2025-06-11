@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F2MRMic74cU=",
+  "dgSpecHash": "l6gMtlyJqNA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
+  "projectFilePath": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\branb\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\branb\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

@@ -98,7 +98,115 @@
         }
       }
     },
-    "/Usuario": {
+    "/Horario/Crear": {
+      "post": {
+        "tags": [
+          "Horario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HorarioModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HorarioModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/HorarioModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Horario/PorUsuario/{usuarioId}": {
+      "get": {
+        "tags": [
+          "Horario"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Horario/Actualizar": {
+      "put": {
+        "tags": [
+          "Horario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HorarioModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HorarioModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/HorarioModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Horario/Eliminar/{horarioId}": {
+      "delete": {
+        "tags": [
+          "Horario"
+        ],
+        "parameters": [
+          {
+            "name": "horarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/ObtenerUsuarios": {
       "get": {
         "tags": [
           "Usuario"
@@ -110,7 +218,7 @@
         }
       }
     },
-    "/Usuario/{id}": {
+    "/ObtenerPorID{id}": {
       "get": {
         "tags": [
           "Usuario"
@@ -167,6 +275,36 @@
   },
   "components": {
     "schemas": {
+      "HorarioModel": {
+        "type": "object",
+        "properties": {
+          "horarioID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "diaSemana": {
+            "type": "string",
+            "nullable": true
+          },
+          "horaInicio": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "horaFin": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginRequestModel": {
         "type": "object",
         "properties": {
