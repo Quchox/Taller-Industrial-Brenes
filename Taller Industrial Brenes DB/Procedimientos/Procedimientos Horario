@@ -6,7 +6,9 @@ ALTER PROCEDURE CrearHorario
     @Observaciones VARCHAR(255)
 AS
 BEGIN
-    -- Validar que el usuario tenga rol de Empleado (RolID = 3)
+    SET NOCOUNT ON;
+
+    -- 1. Validar que sea empleado (RolID = 3)
     IF NOT EXISTS (
         SELECT 1 FROM Usuarios WHERE UsuarioID = @UsuarioID AND RolID = 3
     )
@@ -15,10 +17,27 @@ BEGIN
         RETURN
     END
 
+    -- 2. Validar traslape de horarios
+    IF EXISTS (
+        SELECT 1
+        FROM Horarios
+        WHERE UsuarioID = @UsuarioID
+          AND DiaSemana = @DiaSemana
+          AND (
+                (@HoraInicio BETWEEN HoraInicio AND HoraFin)
+             OR (@HoraFin BETWEEN HoraInicio AND HoraFin)
+             OR (HoraInicio BETWEEN @HoraInicio AND @HoraFin)
+              )
+    )
+    BEGIN
+        RAISERROR('Ya existe un horario para este usuario que se traslapa en ese día.', 16, 1)
+        RETURN
+    END
+
+    -- 3. Insertar si pasa validaciones
     INSERT INTO Horarios (UsuarioID, DiaSemana, HoraInicio, HoraFin, Observaciones)
     VALUES (@UsuarioID, @DiaSemana, @HoraInicio, @HoraFin, @Observaciones)
 END
-
 -- ==============================
 CREATE PROCEDURE ObtenerHorariosPorUsuario
     @UsuarioID BIGINT
@@ -29,7 +48,7 @@ BEGIN
     WHERE UsuarioID = @UsuarioID
 END
 -- ==============================
-CREATE PROCEDURE ActualizarHorario
+ALTER PROCEDURE ActualizarHorario
     @HorarioID INT,
     @DiaSemana VARCHAR(10),
     @HoraInicio TIME,
@@ -37,6 +56,38 @@ CREATE PROCEDURE ActualizarHorario
     @Observaciones VARCHAR(255)
 AS
 BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @UsuarioID BIGINT
+
+    -- Obtener el UsuarioID del horario que se está actualizando
+    SELECT @UsuarioID = UsuarioID FROM Horarios WHERE HorarioID = @HorarioID
+
+    IF @UsuarioID IS NULL
+    BEGIN
+        RAISERROR('El horario no existe.', 16, 1)
+        RETURN
+    END
+
+    -- Validar 
+    IF EXISTS (
+        SELECT 1
+        FROM Horarios
+        WHERE UsuarioID = @UsuarioID
+          AND DiaSemana = @DiaSemana
+          AND HorarioID <> @HorarioID
+          AND (
+                (@HoraInicio BETWEEN HoraInicio AND HoraFin)
+             OR (@HoraFin BETWEEN HoraInicio AND HoraFin)
+             OR (HoraInicio BETWEEN @HoraInicio AND @HoraFin)
+              )
+    )
+    BEGIN
+        RAISERROR('Ya existe otro horario que se traslapa en ese día.', 16, 1)
+        RETURN
+    END
+
+    -- Actualizar si no hay traslape
     UPDATE Horarios
     SET DiaSemana = @DiaSemana,
         HoraInicio = @HoraInicio,
@@ -44,6 +95,7 @@ BEGIN
         Observaciones = @Observaciones
     WHERE HorarioID = @HorarioID
 END
+
 -- ==============================
 CREATE PROCEDURE EliminarHorario
     @HorarioID INT
