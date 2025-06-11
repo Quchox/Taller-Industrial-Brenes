@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj": {}
+    "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj": {
+    "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
+        "projectUniqueName": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
         "projectName": "Taller Industrial Brenes API",
-        "projectPath": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
+        "projectPath": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
         "packagesPath": "C:\\Users\\branb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\obj\\",
+        "outputPath": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

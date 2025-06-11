@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\controllers\\horariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\controllers\\horariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\controllers\\autenticacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\controllers\\autenticacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\models\\horariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\models\\horariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\controllers\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\controllers\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 399,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,42 +70,40 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HorarioModel.cs",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Models\\HorarioModel.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Models\\HorarioModel.cs",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Models\\HorarioModel.cs",
+              "RelativeToolTip": "Taller Industrial Brenes API\\Models\\HorarioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T21:48:35.974Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\appsettings.json",
-              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\appsettings.json",
-              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\appsettings.json*",
-              "RelativeToolTip": "Taller Industrial Brenes API\\appsettings.json*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-07T20:58:33.556Z",
+              "Title": "HorarioController.cs",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
+              "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAIwD0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T21:47:34.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\Usuario.cs",
-              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\Usuario.cs",
-              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\Usuario.cs",
-              "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\Usuario.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAswMYAAAAAAAAAAAAAAA==",
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAIwBcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T20:57:49.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AutenticacionController.cs",
-              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\AutenticacionController.cs",
-              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\AutenticacionController.cs",
-              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\AutenticacionController.cs",
-              "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\AutenticacionController.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAG0AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T20:55:19.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T20:59:36.481Z"
             }
           ]
         },
