@@ -12,7 +12,7 @@ namespace Taller_Industrial_Brenes_API.Controllers
     [Route("[controller]")]
     public class HorarioController : ControllerBase
     {
-        private  IConfiguration _config;
+        private IConfiguration _config;
 
         public HorarioController(IConfiguration config)
         {
@@ -22,6 +22,12 @@ namespace Taller_Industrial_Brenes_API.Controllers
         [HttpPost("Crear")]
         public async Task<IActionResult> Crear([FromBody] HorarioModel model)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (model.HoraInicio >= model.HoraFin)
+                return BadRequest(new { mensaje = "La hora de inicio debe ser menor que la hora de fin." });
+
             using var conn = new SqlConnection(_config.GetConnectionString("ConexionBD"));
             using var comando = new SqlCommand("CrearHorario", conn)
             {
@@ -45,7 +51,6 @@ namespace Taller_Industrial_Brenes_API.Controllers
                 return BadRequest(new { mensaje = ex.Message });
             }
         }
-
 
         [HttpGet("PorUsuario/{usuarioId:long}")]
         public async Task<IActionResult> ObtenerPorUsuario(long usuarioId)
@@ -74,10 +79,19 @@ namespace Taller_Industrial_Brenes_API.Controllers
             }
             return Ok(lista);
         }
-        
+
         [HttpPut("Actualizar")]
         public async Task<IActionResult> Actualizar([FromBody] HorarioModel model)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (model.HorarioID <= 0)
+                return BadRequest(new { mensaje = "Debe especificar un HorarioID válido para actualizar." });
+
+            if (model.HoraInicio >= model.HoraFin)
+                return BadRequest(new { mensaje = "La hora de inicio debe ser menor que la hora de fin." });
+
             using var conn = new SqlConnection(_config.GetConnectionString("ConexionBD"));
             using var comando = new SqlCommand("ActualizarHorario", conn)
             {
@@ -101,7 +115,6 @@ namespace Taller_Industrial_Brenes_API.Controllers
                 return BadRequest(new { mensaje = ex.Message });
             }
         }
-
 
         [HttpDelete("Eliminar/{horarioId:int}")]
         public async Task<IActionResult> Eliminar(int horarioId)
