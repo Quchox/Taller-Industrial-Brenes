@@ -5,6 +5,117 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Asistencia/marcar-entrada": {
+      "post": {
+        "tags": [
+          "Asistencia"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsistenciaModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsistenciaModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsistenciaModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Asistencia/marcar-salida": {
+      "post": {
+        "tags": [
+          "Asistencia"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsistenciaModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsistenciaModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsistenciaModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Asistencia/usuario/{id}": {
+      "get": {
+        "tags": [
+          "Asistencia"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AsistenciaModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AsistenciaModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AsistenciaModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/Autenticacion/Login": {
       "post": {
         "tags": [
@@ -275,7 +386,45 @@
   },
   "components": {
     "schemas": {
+      "AsistenciaModel": {
+        "type": "object",
+        "properties": {
+          "asistenciaID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "usuarioID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "horaEntrada": {
+            "type": "string",
+            "format": "date-span",
+            "nullable": true
+          },
+          "horaSalida": {
+            "type": "string",
+            "format": "date-span",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "HorarioModel": {
+        "required": [
+          "diaSemana",
+          "horaFin",
+          "horaInicio",
+          "usuarioID"
+        ],
         "type": "object",
         "properties": {
           "horarioID": {
@@ -283,12 +432,14 @@
             "format": "int32"
           },
           "usuarioID": {
+            "minimum": 1,
             "type": "integer",
             "format": "int64"
           },
           "diaSemana": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "pattern": "^(Lunes|Martes|Miércoles|Miercoles|Jueves|Viernes|Sábado|Sabado|Domingo)$",
+            "type": "string"
           },
           "horaInicio": {
             "type": "string",

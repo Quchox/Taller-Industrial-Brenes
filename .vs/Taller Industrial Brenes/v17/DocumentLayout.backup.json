@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\",
+  "WorkspaceRootPath": "C:\\Users\\branb\\OneDrive\\Documentos\\GitHub\\Taller-Industrial-Brenes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\controllers\\horariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\onedrive\\documentos\\github\\taller-industrial-brenes\\taller industrial brenes api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\onedrive\\documentos\\github\\taller-industrial-brenes\\taller industrial brenes api\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\onedrive\\documentos\\github\\taller-industrial-brenes\\taller industrial brenes api\\controllers\\horariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\controllers\\horariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\models\\horariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\models\\horariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\onedrive\\documentos\\github\\taller-industrial-brenes\\taller industrial brenes api\\models\\asistenciamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\models\\asistenciamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\onedrive\\documentos\\github\\taller-industrial-brenes\\taller industrial brenes api\\models\\horariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\models\\horariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,140 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 399,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d562c6a0-d2fe-4c19-a8b3-e5cbc09bf375}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{5c82a791-7c9f-441e-952b-8848655dd85e}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{5e929736-0e81-4d52-a78e-546a1649faca}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a34b1c5d-6d37-4a0c-a8b0-99f8e8158b48}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\branb\\OneDrive\\Documentos\\GitHub\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\appsettings.json",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\appsettings.json",
+              "ToolTip": "C:\\Users\\branb\\OneDrive\\Documentos\\GitHub\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\appsettings.json",
+              "RelativeToolTip": "Taller Industrial Brenes API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-20T18:40:22.79Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AsistenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\branb\\OneDrive\\Documentos\\GitHub\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\AsistenciaController.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\AsistenciaController.cs",
+              "ToolTip": "C:\\Users\\branb\\OneDrive\\Documentos\\GitHub\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\AsistenciaController.cs",
+              "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\AsistenciaController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwFUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T18:36:41.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AsistenciaModel.cs",
+              "DocumentMoniker": "C:\\Users\\branb\\OneDrive\\Documentos\\GitHub\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Models\\AsistenciaModel.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Models\\AsistenciaModel.cs",
+              "ToolTip": "C:\\Users\\branb\\OneDrive\\Documentos\\GitHub\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Models\\AsistenciaModel.cs",
+              "RelativeToolTip": "Taller Industrial Brenes API\\Models\\AsistenciaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T18:36:31.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "HorarioModel.cs",
-              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Models\\HorarioModel.cs",
+              "DocumentMoniker": "C:\\Users\\branb\\OneDrive\\Documentos\\GitHub\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Models\\HorarioModel.cs",
               "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Models\\HorarioModel.cs",
-              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Models\\HorarioModel.cs",
+              "ToolTip": "C:\\Users\\branb\\OneDrive\\Documentos\\GitHub\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Models\\HorarioModel.cs",
               "RelativeToolTip": "Taller Industrial Brenes API\\Models\\HorarioModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T21:48:35.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "HorarioController.cs",
-              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
+              "DocumentMoniker": "C:\\Users\\branb\\OneDrive\\Documentos\\GitHub\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
               "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
-              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
+              "ToolTip": "C:\\Users\\branb\\OneDrive\\Documentos\\GitHub\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
               "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAIwE0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T21:47:34.623Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAIwBcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T20:59:36.481Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 99,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cdbdee54-b399-484b-b763-db2c3393d646}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:18:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:19:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:21:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 150,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
