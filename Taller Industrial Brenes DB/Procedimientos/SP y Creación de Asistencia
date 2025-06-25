@@ -1,0 +1,89 @@
+USE [TallerBrenes]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Asistencia' AND xtype='U')
+BEGIN
+    CREATE TABLE Asistencia (
+        AsistenciaID BIGINT IDENTITY(1,1) PRIMARY KEY,
+        UsuarioID BIGINT NOT NULL,
+        Fecha DATE NOT NULL,
+        HoraEntrada TIME NULL,
+        HoraSalida TIME NULL,
+        Estado VARCHAR(50),
+        FOREIGN KEY (UsuarioID) REFERENCES Usuarios(UsuarioID)
+    );
+END
+GO
+
+-- ========================================
+-- SP: MarcarEntrada con validación contra horarios
+ALTER PROCEDURE [dbo].[MarcarEntrada]
+    @UsuarioID BIGINT,
+    @HoraEntrada TIME
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SET LANGUAGE Spanish;
+
+    DECLARE @Hoy DATE = CAST(GETDATE() AS DATE);
+    DECLARE @DiaSemanaRaw VARCHAR(20) = DATENAME(WEEKDAY, @Hoy);
+    DECLARE @DiaSemana VARCHAR(20);
+    DECLARE @HoraInicio TIME;
+    DECLARE @Estado VARCHAR(50);
+
+    -- Normalización de nombre del día
+    SET @DiaSemana = 
+        CASE 
+            WHEN @DiaSemanaRaw = 'Lunes' THEN 'Lunes'
+            WHEN @DiaSemanaRaw = 'Martes' THEN 'Martes'
+            WHEN @DiaSemanaRaw IN ('Miércoles', 'Miercoles') THEN 'Miercoles'
+            WHEN @DiaSemanaRaw = 'Jueves' THEN 'Jueves'
+            WHEN @DiaSemanaRaw = 'Viernes' THEN 'Viernes'
+            WHEN @DiaSemanaRaw IN ('Sábado', 'Sabado') THEN 'Sabado'
+            WHEN @DiaSemanaRaw = 'Domingo' THEN 'Domingo'
+            ELSE @DiaSemanaRaw
+        END;
+
+    -- Validación si ya existe asistencia para hoy
+    IF EXISTS (SELECT 1 FROM Asistencia WHERE UsuarioID = @UsuarioID AND Fecha = @Hoy)
+    BEGIN
+        RAISERROR('Ya se registró la entrada para hoy.', 16, 1);
+        RETURN;
+    END
+
+    -- Obtener hora de inicio del horario
+    SELECT TOP 1 @HoraInicio = HoraInicio
+    FROM Horarios
+    WHERE UsuarioID = @UsuarioID AND DiaSemana = @DiaSemana;
+
+    -- Determinar estado
+    IF @HoraInicio IS NULL
+        SET @Estado = 'Sin horario';
+    ELSE IF @HoraEntrada <= @HoraInicio
+        SET @Estado = 'Puntual';
+    ELSE
+        SET @Estado = 'Tarde';
+
+    -- Insertar asistencia
+    INSERT INTO Asistencia (UsuarioID, Fecha, HoraEntrada, Estado)
+    VALUES (@UsuarioID, @Hoy, @HoraEntrada, @Estado);
+END
+GO
+-- SP: Listar asistencias por usuario
+IF OBJECT_ID('dbo.ListarAsistenciaPorUsuario', 'P') IS NOT NULL
+    DROP PROCEDURE dbo.ListarAsistenciaPorUsuario;
+GO
+
+CREATE PROCEDURE ListarAsistenciaPorUsuario
+    @UsuarioID BIGINT
+AS
+BEGIN
+    SELECT * FROM Asistencia
+    WHERE UsuarioID = @UsuarioID
+    ORDER BY Fecha DESC;
+END
+GO
