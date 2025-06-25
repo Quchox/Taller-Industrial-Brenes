@@ -10,6 +10,6 @@ namespace Taller_Industrial_Brenes_API.Models
         public DateTime Fecha { get; set; }
         public TimeSpan? HoraEntrada { get; set; }
         public TimeSpan? HoraSalida { get; set; }
-        public string Estado { get; set; }
+        public string? Estado { get; set; }
     }
 }

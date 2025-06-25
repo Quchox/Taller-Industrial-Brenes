@@ -17,7 +17,7 @@ namespace Taller_Industrial_Brenes_API.Controllers
 
         public AsistenciaController(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _connectionString = configuration.GetConnectionString("ConexionBD");
         }
 
         [HttpPost("marcar-entrada")]
