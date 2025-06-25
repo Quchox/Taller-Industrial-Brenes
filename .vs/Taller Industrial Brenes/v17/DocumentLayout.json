@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\aronm\\source\\repos\\Taller-Industrial-Brenes\\",
+<<<<<<< Updated upstream
   "Documents": [],
+=======
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\aronm\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\models\\productocreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\models\\productocreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\aronm\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+>>>>>>> Stashed changes
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -54,6 +67,39 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+<<<<<<< Updated upstream
+=======
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductoCreateModel.cs",
+              "DocumentMoniker": "C:\\Users\\aronm\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Models\\ProductoCreateModel.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Models\\ProductoCreateModel.cs",
+              "ToolTip": "C:\\Users\\aronm\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Models\\ProductoCreateModel.cs",
+              "RelativeToolTip": "Taller Industrial Brenes API\\Models\\ProductoCreateModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:58:04.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\aronm\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\aronm\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAAHsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:55:42.789Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             }
           ]
         },

@@ -37,3 +37,61 @@ C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes AP
 C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.pdb
 C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.genruntimeconfig.cache
 C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\ref\Taller Industrial Brenes API.dll
+<<<<<<< Updated upstream
+=======
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\appsettings.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.staticwebassets.endpoints.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.exe
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.deps.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.runtimeconfig.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Taller Industrial Brenes API.pdb
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Dapper.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.csproj.AssemblyReference.cache
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.AssemblyInfoInputs.cache
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.AssemblyInfo.cs
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.csproj.CoreCompileInputs.cache
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.sourcelink.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\scopedcss\bundle\Taller Industrial Brenes API.styles.css
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets\msbuild.Taller Industrial Brenes API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets\msbuild.Taller Industrial Brenes API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets\msbuild.build.Taller Industrial Brenes API.props
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Taller Industrial Brenes API.props
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Taller Industrial Brenes API.props
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller I.ED638EB5.Up2Date
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\refint\Taller Industrial Brenes API.dll
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.pdb
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\Taller Industrial Brenes API.genruntimeconfig.cache
+C:\Users\branb\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\obj\Debug\net8.0\ref\Taller Industrial Brenes API.dll
+C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\aronm\source\repos\Taller-Industrial-Brenes\Taller Industrial Brenes API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+>>>>>>> Stashed changes
