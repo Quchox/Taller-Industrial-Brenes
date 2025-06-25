@@ -1,7 +1,6 @@
-﻿@using Taller_Industrial_Brenes_Web.Models
-@model Taller_Industrial_Brenes_Web.Models.UsuarioModel
+﻿@model Taller_Industrial_Brenes_Web.Models.UsuarioModel
 @{
-    ViewData["Title"] = "Recuperar Contraseña";
+    ViewData["Title"] = "Restablecer Contraseña";
 
     Layout = "_LayoutExterno";
 
@@ -15,25 +14,28 @@
                 <div class="card o-hidden border-0 shadow-lg my-lg-5">
                     <div class="card-body p-0">
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image" style="background-image: url('/img/backgrounds/Imagen4.jpg');"></div>
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image" style="background-image: url('/img/backgrounds/Imagen3.jpg');"></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Recover the Password</h1>
-                                        <h1 class="h6 text-gray-600 mb-4">Enter your email and we will send you a code.</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Reset Password</h1>
+                                        <h1 class="h6 text-gray-600 mb-4">Enter your new password.</h1>
                                     </div>
-
-                                    @if (ViewBag.Error != null)
+                                    @if (ViewBag.Msj != null)
                                     {
-                                        <div class="alert alert-danger text-center">@ViewBag.Error</div>
+                                        <div class="alert alert-danger text-center">@ViewBag.Msj</div>
                                     }
 
-                                    <form asp-action="RecuperarContrasenna" asp-controller="Autenticacion" method="post">
+                                    <form asp-action="RestablecerContrasenna" asp-controller="Autenticacion" method="post">
                                         <div class="form-group">
-                                            <input asp-for="Correo" class="form-control form-control-user" placeholder="Enter Email Address..." />
-                                            <span asp-validation-for="Correo" class="text-danger"></span>
+                                            <input asp-for="Contrasenna" class="form-control input-lg" type="password" placeholder="New Password" required />
                                         </div>
-                                        <button type="submit" class="btn btn-primary btn-user btn-block">Send Code</button>
+
+                                        <div class="form-group">
+                                            <input name="ConfirmarContrasenna" class="form-control input-lg" type="password" placeholder="Confirm password" required />
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">Reset</button>
                                     </form>
 
                                     <hr>

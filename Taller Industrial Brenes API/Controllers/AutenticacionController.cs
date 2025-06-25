@@ -4,9 +4,15 @@ using Dapper;
 using Taller_Industrial_Brenes_API.Models;
 using Microsoft.Extensions.Configuration;
 using System.Data;
+using System.Security.Claims;
+using System.Text;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Taller_Industrial_Brenes_API.Controllers
 {
+    [AllowAnonymous]
     [ApiController]
     [Route("[controller]")]
     public class AutenticacionController : ControllerBase
@@ -19,26 +25,34 @@ namespace Taller_Industrial_Brenes_API.Controllers
         }
 
         [HttpPost("Login")]
-        public IActionResult Login([FromBody] LoginRequestModel login)
+        public IActionResult Login([FromBody] UsuarioModel login)
         {
-            using var connection = new SqlConnection(_config.GetConnectionString("ConexionBD"));
+            using var connection = new SqlConnection(_config.GetConnectionString("ConnectionStrings:ConexionBD"));
+            {
+                var usuario = connection.QueryFirstOrDefault<UsuarioModel>(
+                    "LoginUsuario",
+                    new { login.Correo, login.Contrasenna },
+                    commandType: System.Data.CommandType.StoredProcedure);
 
-            var usuario = connection.QueryFirstOrDefault<UsuarioModel>(
-                "LoginUsuario",
-                new { login.Correo, login.Contrasenna },
-                commandType: System.Data.CommandType.StoredProcedure);
+                if (usuario != null)
+                {
+                    // Generar y asignar token
+                    usuario.Token = GenerarToken(usuario.UsuarioID, usuario.RolID);
+                }
+                else
+                { 
+                    return Unauthorized("Credenciales incorrectas");
+                }
 
-            if (usuario == null)
-                return Unauthorized("Credenciales incorrectas");
-
-            return Ok(usuario);
+                return Ok(usuario);
+            }
         }
 
 
         [HttpPost("Registro")]
-        public IActionResult Registro([FromBody] UsuarioModel nuevo)
+        public IActionResult Registro([FromBody]UsuarioModel nuevo)
         {
-            using var connection = new SqlConnection(_config.GetConnectionString("ConexionBD"));
+            using var connection = new SqlConnection(_config.GetConnectionString("ConnectionStrings:ConexionBD"));
 
             try
             {
@@ -69,7 +83,7 @@ namespace Taller_Industrial_Brenes_API.Controllers
         {
             try
             {
-                using (var context = new SqlConnection(_config.GetConnectionString("ConexionBD")))
+                using (var context = new SqlConnection(_config.GetConnectionString("ConnectionStrings:ConexionBD")))
                 {
                     //Procedimiento almacenado
                     var usuario = context.QueryFirstOrDefault<UsuarioModel>(
@@ -107,7 +121,62 @@ namespace Taller_Industrial_Brenes_API.Controllers
                 });
             }
         }
-       
+
+        [HttpPut("RestablecerContrasenna")]
+        public IActionResult RestablecerContrasenna([FromBody] UsuarioModel model)
+        {
+            using (var context = new SqlConnection(_config.GetConnectionString("ConnectionStrings:ConexionBD")))
+            {
+                // Ejecutar el procedimiento almacenado
+                var result = context.Execute("RestablecerContrasenna",
+                    new { model.Correo, model.Contrasenna },
+                    commandType: System.Data.CommandType.StoredProcedure);
+
+                if (result > 0)
+                    return Ok(new { mensaje = "Contraseña actualizada correctamente" });
+
+                return BadRequest(new { mensaje = "No se pudo actualizar la contraseña" });
+            }
+        }
+
+        private string GenerarToken(long UsuarioID, long RolID)
+        {
+            string? SecretKey = _config.GetSection("Variables:llaveCifrado").Value!;
+
+            if (string.IsNullOrEmpty(SecretKey))
+            {
+                throw new InvalidOperationException("La llave del token no está configurada correctamente.");
+            }
+
+            List<Claim> claims = new List<Claim>();
+            claims.Add(new Claim("UsuarioID", UsuarioID.ToString()));
+            claims.Add(new Claim("RolID", RolID.ToString()));
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SecretKey));
+            var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature);
+
+            var token = new JwtSecurityToken(
+                claims: claims,
+                expires: DateTime.UtcNow.AddMinutes(20),
+                signingCredentials: cred);
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+
+        [HttpGet("ObtenerUsuarioPorCorreo/{correo}")]
+        public IActionResult ObtenerUsuarioPorCorreo(string correo)
+        {
+            using (var context = new SqlConnection(_config.GetSection("ConnectionStrings:ConexionBD").Value))
+            {
+                var result = context.QueryFirstOrDefault<UsuarioModel>("ObtenerUsuarioCompleto", new { correo }, commandType: System.Data.CommandType.StoredProcedure);
+
+                if (result == null)
+                    return NotFound();
+
+                return Ok(result);
+            }
+        }
     }
 }
 
