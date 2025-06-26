@@ -104,3 +104,18 @@ BEGIN
     DELETE FROM Horarios
     WHERE HorarioID = @HorarioID
 END
+=========================================
+CREATE PROCEDURE ObtenerHorarioPorID
+    @HorarioID INT
+AS
+BEGIN
+    SELECT 
+        HorarioID,
+        UsuarioID,
+        DiaSemana,
+        HoraInicio,
+        HoraFin,
+        Observaciones
+    FROM Horario
+    WHERE HorarioID = @HorarioID;
+END;
