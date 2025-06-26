@@ -14,7 +14,7 @@ namespace Taller_Industrial_Brenes_Web.Controllers.Home
             _httpClient = httpClient;
             _config = config;
         }
-            public IActionResult Index()
+            public IActionResult Inicio()
             {
                 return View();
             }
