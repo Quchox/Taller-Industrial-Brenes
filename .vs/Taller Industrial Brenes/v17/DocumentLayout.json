@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Progra avanzada\\Taller Industrial Brenes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|d:\\progra avanzada\\taller industrial brenes\\taller industrial brenes web\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 399,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +86,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "CuentaController.cs",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Controllers\\CuentaController.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Controllers\\CuentaController.cs",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Controllers\\CuentaController.cs",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Controllers\\CuentaController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T07:43:47.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\appsettings.json",
+              "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\appsettings.json",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-26T07:43:09.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Agregar.cshtml",
               "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Views\\Inventario\\Agregar.cshtml",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Inventario\\Agregar.cshtml",
@@ -86,25 +120,24 @@
               "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Inventario\\Agregar.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-25T22:33:14.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T22:33:14.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Views\\Inventario\\Index.cshtml",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Inventario\\Index.cshtml",
               "ToolTip": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Views\\Inventario\\Index.cshtml",
               "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Inventario\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAwB0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwB0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-25T20:52:06.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Alertas.cshtml",
               "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Views\\Inventario\\Alertas.cshtml",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Inventario\\Alertas.cshtml",
@@ -112,12 +145,11 @@
               "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Inventario\\Alertas.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-25T20:51:18.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T20:51:18.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "InventarioController.cs",
               "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes Web\\Controllers\\InventarioController.cs",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Controllers\\InventarioController.cs",
@@ -125,12 +157,11 @@
               "RelativeToolTip": "Taller Industrial Brenes Web\\Controllers\\InventarioController.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T20:48:07.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T20:48:07.995Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "InventarioController.cs",
               "DocumentMoniker": "D:\\Progra avanzada\\Taller Industrial Brenes\\Taller Industrial Brenes API\\Controllers\\InventarioController.cs",
               "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\InventarioController.cs",
@@ -138,8 +169,7 @@
               "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\InventarioController.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAEkAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T20:47:41.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T20:47:41.787Z"
             }
           ]
         },

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Security.Cryptography;
+using System.Text;
 using Taller_Industrial_Brenes_Web.Models;
 
 namespace Taller_Industrial_Brenes_Web.Controllers
@@ -9,11 +11,13 @@ namespace Taller_Industrial_Brenes_Web.Controllers
     {
         private readonly IConfiguration _config;
         private readonly string _apiUrl;
+        private readonly string _llaveCifrado;
 
         public CuentaController(IConfiguration config)
         {
             _config = config;
             _apiUrl = _config["ApiUrl"];
+            _llaveCifrado = _config["llaveCifrado"];
         }
 
         [HttpGet]
@@ -22,6 +26,9 @@ namespace Taller_Industrial_Brenes_Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginRequestModel model)
         {
+            // Encriptar contraseña antes de enviarla al API
+            model.Contrasenna = Encrypt(model.Contrasenna ?? string.Empty);
+
             using var client = new HttpClient();
             var response = await client.PostAsJsonAsync($"{_apiUrl}/Autenticacion/Login", model);
 
@@ -29,8 +36,8 @@ namespace Taller_Industrial_Brenes_Web.Controllers
             {
                 var usuario = await response.Content.ReadFromJsonAsync<UsuarioModel>();
                 TempData["UsuarioNombre"] = usuario?.Nombre;
-                TempData["RolID"] = usuario?.RolID.ToString(); 
-                TempData.Keep("RolID"); 
+                TempData["RolID"] = usuario?.RolID.ToString();
+                TempData.Keep("RolID");
                 return RedirectToAction("Index", "Home");
             }
 
@@ -44,6 +51,9 @@ namespace Taller_Industrial_Brenes_Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Registro(UsuarioModel model)
         {
+            // Encriptar contraseña antes de enviarla al API
+            model.Contrasenna = Encrypt(model.Contrasenna ?? string.Empty);
+
             using var client = new HttpClient();
             var response = await client.PostAsJsonAsync($"{_apiUrl}/Autenticacion/Registro", model);
 
@@ -53,5 +63,33 @@ namespace Taller_Industrial_Brenes_Web.Controllers
             ViewBag.Error = "Error al registrar el usuario";
             return View();
         }
+
+        #region Encriptación AES
+        private string Encrypt(string texto)
+        {
+            byte[] iv = new byte[16];
+            byte[] array;
+
+            using (Aes aes = Aes.Create())
+            {
+                aes.Key = Encoding.UTF8.GetBytes(_llaveCifrado);
+                aes.IV = iv;
+
+                ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
+
+                using var memoryStream = new MemoryStream();
+                using var cryptoStream = new CryptoStream(memoryStream, encryptor, CryptoStreamMode.Write);
+                using var streamWriter = new StreamWriter(cryptoStream);
+
+                streamWriter.Write(texto);
+                streamWriter.Flush();
+                cryptoStream.FlushFinalBlock();
+
+                array = memoryStream.ToArray();
+            }
+
+            return Convert.ToBase64String(array);
+        }
+        #endregion
     }
 }
