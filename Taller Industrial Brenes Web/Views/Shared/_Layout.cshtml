@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="~/Taller_Industrial_Brenes_Web.styles.css" asp-append-version="true" />
 </head>
 <body>
+    @{
+        TempData.Keep("RolID");
+    }
+    
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -22,9 +26,17 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+
+                        @if (TempData["RolID"] != null && TempData["RolID"].ToString() == "1")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Inventario" asp-action="Index">Inventario</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

@@ -112,6 +112,58 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.InventarioController",
+    "Method": "AgregarProducto",
+    "RelativePath": "Inventario/AgregarProducto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "producto",
+        "Type": "Taller_Industrial_Brenes_API.Models.ProductoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.InventarioController",
+    "Method": "EliminarProducto",
+    "RelativePath": "Inventario/EliminarProducto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productoID",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.InventarioController",
+    "Method": "ObtenerProductos",
+    "RelativePath": "Inventario/ObtenerProductos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.InventarioController",
+    "Method": "ProductosStockBajo",
+    "RelativePath": "Inventario/ProductosStockBajo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Taller_Industrial_Brenes_API.Controllers.UsuarioController",
     "Method": "ObtenerPorID",
     "RelativePath": "ObtenerPorID{id}",

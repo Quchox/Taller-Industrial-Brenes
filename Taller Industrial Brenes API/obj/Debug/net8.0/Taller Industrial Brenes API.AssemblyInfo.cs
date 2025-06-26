@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Taller Industrial Brenes API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1be75a17aec25dd53cf01dc3f5ec0d70d1fb86b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9de3f08ed10f58cac5d94f7ebc269544531f3f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Taller Industrial Brenes API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Taller Industrial Brenes API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -29,6 +29,8 @@ namespace Taller_Industrial_Brenes_Web.Controllers
             {
                 var usuario = await response.Content.ReadFromJsonAsync<UsuarioModel>();
                 TempData["UsuarioNombre"] = usuario?.Nombre;
+                TempData["RolID"] = usuario?.RolID.ToString(); 
+                TempData.Keep("RolID"); 
                 return RedirectToAction("Index", "Home");
             }
 

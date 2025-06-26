@@ -206,6 +206,95 @@
         }
       }
     },
+    "/Inventario/ObtenerProductos": {
+      "get": {
+        "tags": [
+          "Inventario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Inventario/ProductosStockBajo": {
+      "get": {
+        "tags": [
+          "Inventario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Inventario/AgregarProducto": {
+      "post": {
+        "tags": [
+          "Inventario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductoModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductoModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductoModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Inventario/EliminarProducto": {
+      "post": {
+        "tags": [
+          "Inventario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int64"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int64"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "integer",
+                "format": "int64"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/ObtenerUsuarios": {
       "get": {
         "tags": [
@@ -276,6 +365,12 @@
   "components": {
     "schemas": {
       "HorarioModel": {
+        "required": [
+          "diaSemana",
+          "horaFin",
+          "horaInicio",
+          "usuarioID"
+        ],
         "type": "object",
         "properties": {
           "horarioID": {
@@ -283,12 +378,14 @@
             "format": "int32"
           },
           "usuarioID": {
+            "minimum": 1,
             "type": "integer",
             "format": "int64"
           },
           "diaSemana": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "pattern": "^(Lunes|Martes|Miércoles|Miercoles|Jueves|Viernes|Sábado|Sabado|Domingo)$",
+            "type": "string"
           },
           "horaInicio": {
             "type": "string",
@@ -315,6 +412,32 @@
           "contrasenna": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductoModel": {
+        "type": "object",
+        "properties": {
+          "productoID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "stock": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "precio": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false
