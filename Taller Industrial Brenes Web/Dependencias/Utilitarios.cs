@@ -24,8 +24,7 @@ namespace Taller_Industrial_Brenes_Web.Dependencias
         {
             using (var api = _httpClient.CreateClient())
             {
-                var url = _config.GetSection(_apiUrl).Value + "Admin/ListadoAdmin?Id=" + UsuarioID;
-
+                var url = $"{_apiUrl.TrimEnd('/')}/Admin/ListadoAdmin?Id={UsuarioID}";
                 api.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _accessor.HttpContext!.Session.GetString("Token"));
 
                 var response = api.GetAsync(url).Result;

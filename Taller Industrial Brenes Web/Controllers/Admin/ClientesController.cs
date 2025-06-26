@@ -7,7 +7,6 @@ using Taller_Industrial_Brenes_Web.Models;
 
 namespace Taller_Industrial_Brenes_Web.Controllers.Admin
 {
-    [FiltroSeguridadSesion]
     public class ClientesController : Controller
     {
         private readonly IHttpClientFactory _httpClient;

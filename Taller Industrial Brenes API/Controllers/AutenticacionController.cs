@@ -24,61 +24,53 @@ namespace Taller_Industrial_Brenes_API.Controllers
             _config = config;
         }
 
-        [HttpPost("Login")]
-        public IActionResult Login([FromBody] UsuarioModel login)
-        {
-            using var connection = new SqlConnection(_config.GetConnectionString("ConnectionStrings:ConexionBD"));
-            {
-                var usuario = connection.QueryFirstOrDefault<UsuarioModel>(
-                    "LoginUsuario",
-                    new { login.Correo, login.Contrasenna },
-                    commandType: System.Data.CommandType.StoredProcedure);
+		[HttpPost("Login")]
+		public IActionResult Login([FromBody] LoginRequestModel login)
+		{
+			using var connection = new SqlConnection(_config.GetConnectionString("ConexionBD"));
 
-                if (usuario != null)
-                {
-                    // Generar y asignar token
-                    usuario.Token = GenerarToken(usuario.UsuarioID, usuario.RolID);
-                }
-                else
-                { 
-                    return Unauthorized("Credenciales incorrectas");
-                }
+			var usuario = connection.QueryFirstOrDefault<UsuarioModel>(
+				"LoginUsuario",
+				new { login.Correo, login.Contrasenna },
+				commandType: System.Data.CommandType.StoredProcedure);
 
-                return Ok(usuario);
-            }
-        }
+			if (usuario == null)
+				return Unauthorized("Credenciales incorrectas");
+
+			return Ok(usuario);
+		}
 
 
-        [HttpPost("Registro")]
-        public IActionResult Registro([FromBody]UsuarioModel nuevo)
-        {
-            using var connection = new SqlConnection(_config.GetConnectionString("ConnectionStrings:ConexionBD"));
+		[HttpPost("Registro")]
+		public IActionResult Registro([FromBody] UsuarioModel nuevo)
+		{
+			using var connection = new SqlConnection(_config.GetConnectionString("ConexionBD"));
 
-            try
-            {
-                connection.Execute(
-                    "RegistrarUsuario",
-                    new
-                    {
-                        nuevo.Identificacion,
-                        nuevo.Nombre,
-                        nuevo.ApellidoPaterno,
-                        nuevo.ApellidoMaterno,
-                        nuevo.Correo,
-                        nuevo.Contrasenna,
-                        nuevo.RolID
-                    },
-                    commandType: System.Data.CommandType.StoredProcedure);
+			try
+			{
+				connection.Execute(
+					"RegistrarUsuario",
+					new
+					{
+						nuevo.Identificacion,
+						nuevo.Nombre,
+						nuevo.ApellidoPaterno,
+						nuevo.ApellidoMaterno,
+						nuevo.Correo,
+						nuevo.Contrasenna,
+						nuevo.RolID
+					},
+					commandType: System.Data.CommandType.StoredProcedure);
 
-                return Ok("Usuario registrado exitosamente");
-            }
-            catch (SqlException ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
+				return Ok("Usuario registrado exitosamente");
+			}
+			catch (SqlException ex)
+			{
+				return BadRequest(ex.Message);
+			}
+		}
 
-        [HttpPost("EnviarRecuperacion")]
+		[HttpPost("EnviarRecuperacion")]
         public IActionResult EnviarRecuperacion([FromBody] string correo)
         {
             try
