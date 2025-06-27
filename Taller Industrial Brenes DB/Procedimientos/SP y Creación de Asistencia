@@ -87,3 +87,12 @@ BEGIN
     ORDER BY Fecha DESC;
 END
 GO
+
+=========================================
+CREATE PROCEDURE ListarAsistenciaCompleta
+AS
+BEGIN
+    SELECT AsistenciaID, UsuarioID, Fecha, HoraEntrada, HoraSalida, Estado
+    FROM Asistencia
+    ORDER BY Fecha DESC;
+END;
