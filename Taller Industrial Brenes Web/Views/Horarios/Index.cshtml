@@ -1,0 +1,33 @@
+
+@model List<Taller_Industrial_Brenes_Web.Models.HorarioModel>
+
+@{
+    ViewData["Title"] = "Mi Horario";
+}
+
+<h2 class="mb-3">Mi Horario Semanal</h2>
+<li class="nav-item">
+    <a class="btn btn-primary" asp-controller="Horarios" asp-action="MiHorario">Ver Mi Horario</a>
+</li>
+
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Día</th>
+            <th>Hora Inicio</th>
+            <th>Hora Fin</th>
+            <th>Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var h in Model)
+        {
+            <tr>
+                <td>@h.DiaSemana</td>
+                <td>@h.HoraInicio</td>
+                <td>@h.HoraFin</td>
+                <td>@h.Observaciones</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,24 @@
+
+@model Taller_Industrial_Brenes_Web.Models.HorarioModel
+
+@{
+    ViewData["Title"] = "Eliminar Horario";
+}
+
+<h2>Eliminar Horario</h2>
+
+<h4>¿Está seguro que desea eliminar este horario?</h4>
+
+<div>
+    <strong>UsuarioID:</strong> @Model.UsuarioID<br />
+    <strong>Día:</strong> @Model.DiaSemana<br />
+    <strong>Hora Inicio:</strong> @Model.HoraInicio<br />
+    <strong>Hora Fin:</strong> @Model.HoraFin<br />
+    <strong>Observaciones:</strong> @Model.Observaciones
+</div>
+
+<form asp-action="Eliminar">
+    <input type="hidden" asp-for="HorarioID" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Administrar" class="btn btn-secondary">Cancelar</a>
+</form>

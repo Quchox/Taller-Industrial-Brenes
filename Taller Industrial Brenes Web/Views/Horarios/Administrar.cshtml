@@ -1,0 +1,41 @@
+
+@model List<Taller_Industrial_Brenes_Web.Models.HorarioModel>
+
+@{
+    ViewData["Title"] = "Administrar Horarios";
+}
+
+<h2>Administrar Horarios</h2>
+
+<a class="btn btn-primary mb-3" asp-action="Crear">Agregar Horario</a>
+<a class="btn btn-outline-success mb-4" asp-controller="Horarios" asp-action="MiHorario">Ver Mi Horario</a>
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>UsuarioID</th>
+            <th>Día</th>
+            <th>Inicio</th>
+            <th>Fin</th>
+            <th>Observaciones</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.UsuarioID</td>
+                <td>@item.DiaSemana</td>
+                <td>@item.HoraInicio</td>
+                <td>@item.HoraFin</td>
+                <td>@item.Observaciones</td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@item.HorarioID" class="btn btn-sm btn-outline-warning">Editar</a>
+                    <a asp-action="Eliminar" asp-route-id="@item.HorarioID" class="btn btn-sm btn-outline-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

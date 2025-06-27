@@ -1,10 +1,7 @@
 
 using Microsoft.AspNetCore.Mvc;
-using System.Data.SqlClient;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using Taller_Industrial_Brenes_API.Models;
 
 namespace Taller_Industrial_Brenes_API.Controllers

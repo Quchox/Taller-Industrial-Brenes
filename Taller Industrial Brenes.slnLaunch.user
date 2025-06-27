@@ -4,11 +4,13 @@
     "Projects": [
       {
         "Path": "Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "https"
       },
       {
         "Path": "Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "https"
       }
     ]
   }

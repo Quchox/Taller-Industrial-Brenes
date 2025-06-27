@@ -1,0 +1,42 @@
+﻿@model List<Taller_Industrial_Brenes_Web.Models.HorarioModel>
+
+@{
+    ViewData["Title"] = "Mi Horario";
+}
+
+<h2>Mi Horario</h2>
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary mt-3">
+    ← Volver al inicio
+</a>
+<a asp-controller="Horarios" asp-action="Administrar" class="btn btn-outline-success mt-3">
+    ← Volver al Menu Horarios
+</a>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Día</th>
+                <th>Inicio</th>
+                <th>Fin</th>
+                <th>Observaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var horario in Model)
+            {
+                <tr>
+                    <td>@horario.DiaSemana</td>
+                    <td>@horario.HoraInicio</td>
+                    <td>@horario.HoraFin</td>
+                    <td>@horario.Observaciones</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay horarios asignados.</p>
+}

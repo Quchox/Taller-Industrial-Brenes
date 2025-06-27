@@ -155,6 +155,22 @@
   },
   {
     "ContainingType": "Taller_Industrial_Brenes_API.Controllers.HorarioController",
+    "Method": "ObtenerPorID",
+    "RelativePath": "Horario/PorID/{horarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "horarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.HorarioController",
     "Method": "ObtenerPorUsuario",
     "RelativePath": "Horario/PorUsuario/{usuarioId}",
     "HttpMethod": "GET",
@@ -167,6 +183,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.HorarioController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "Horario/Todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

@@ -19,6 +19,69 @@ namespace Taller_Industrial_Brenes_API.Controllers
             _config = config;
         }
 
+
+        [HttpGet("PorID/{horarioId:int}")]
+        public async Task<IActionResult> ObtenerPorID(int horarioId)
+        {
+            using var conn = new SqlConnection(_config.GetConnectionString("ConexionBD"));
+            using var comando = new SqlCommand("ObtenerHorarioPorID", conn)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+
+            comando.Parameters.AddWithValue("@HorarioID", horarioId);
+
+            await conn.OpenAsync();
+            using var reader = await comando.ExecuteReaderAsync();
+
+            if (!reader.HasRows)
+                return NotFound("Horario no encontrado.");
+
+            await reader.ReadAsync();
+
+            var horario = new HorarioModel
+            {
+                HorarioID = reader.GetInt32(reader.GetOrdinal("HorarioID")),
+                UsuarioID = reader.GetInt64(reader.GetOrdinal("UsuarioID")),
+                DiaSemana = reader.GetString(reader.GetOrdinal("DiaSemana")),
+                HoraInicio = reader.GetTimeSpan(reader.GetOrdinal("HoraInicio")),
+                HoraFin = reader.GetTimeSpan(reader.GetOrdinal("HoraFin")),
+                Observaciones = reader.IsDBNull(reader.GetOrdinal("Observaciones")) ? null : reader.GetString(reader.GetOrdinal("Observaciones"))
+            };
+
+            return Ok(horario);
+        }
+
+
+
+        [HttpGet("Todos")]
+        public async Task<IActionResult> ObtenerTodos()
+        {
+            var lista = new List<HorarioModel>();
+
+            using var conn = new SqlConnection(_config.GetConnectionString("ConexionBD"));
+            using var comando = new SqlCommand("SELECT * FROM Horarios", conn);
+
+            await conn.OpenAsync();
+            using var reader = await comando.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                lista.Add(new HorarioModel
+                {
+                    HorarioID = reader.GetInt32(reader.GetOrdinal("HorarioID")),
+                    UsuarioID = reader.GetInt64(reader.GetOrdinal("UsuarioID")),
+                    DiaSemana = reader.GetString(reader.GetOrdinal("DiaSemana")),
+                    HoraInicio = reader.GetTimeSpan(reader.GetOrdinal("HoraInicio")),
+                    HoraFin = reader.GetTimeSpan(reader.GetOrdinal("HoraFin")),
+                    Observaciones = reader.IsDBNull(reader.GetOrdinal("Observaciones")) ? null : reader.GetString(reader.GetOrdinal("Observaciones"))
+                });
+            }
+
+            return Ok(lista);
+        }
+
+
         [HttpPost("Crear")]
         public async Task<IActionResult> Crear([FromBody] HorarioModel model)
         {
