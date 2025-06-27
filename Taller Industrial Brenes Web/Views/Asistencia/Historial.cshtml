@@ -1,4 +1,40 @@
-﻿@page
-@model Taller_Industrial_Brenes_Web.Views.Asistencia.HistorialModel
+﻿@model List<Taller_Industrial_Brenes_Web.Models.AsistenciaModel>
+
 @{
+    ViewData["Title"] = "Historial de Asistencia";
 }
+
+<h2>Historial de Asistencia</h2>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Fecha</th>
+                <th>Entrada</th>
+                <th>Salida</th>
+                <th>Estado</th>
+                <th>UsuarioID</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Fecha.ToString("yyyy-MM-dd")</td>
+                    <td>@(item.HoraEntrada?.ToString(@"hh\:mm") ?? "-")</td>
+                    <td>@(item.HoraSalida?.ToString(@"hh\:mm") ?? "-")</td>
+                    <td>@item.Estado</td>
+                    <td>@item.UsuarioID</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay registros de asistencia disponibles.</p>
+}
+
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary mt-3">Volver al inicio</a>

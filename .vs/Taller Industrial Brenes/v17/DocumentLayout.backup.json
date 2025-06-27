@@ -7,6 +7,26 @@
       "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes web\\views\\perfil\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\views\\perfil\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes web\\views\\asistencia\\historial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\views\\asistencia\\historial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes web\\views\\asistencia\\marcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\views\\asistencia\\marcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes web\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes api\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8464AC54-13E3-4F50-BD29-8E54A32A6C76}|Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj|solutionrelative:taller industrial brenes api\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes web\\views\\horarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\views\\horarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -29,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes web\\views\\horarios\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\views\\horarios\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes web\\views\\perfil\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|solutionrelative:taller industrial brenes web\\views\\perfil\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4EEA1F1-A765-4788-BB81-2467310B6FC0}|Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj|c:\\users\\branb\\source\\repos\\taller-industrial-brenes\\taller industrial brenes web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 399,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -131,19 +147,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MiHorario.cshtml",
-              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\MiHorario.cshtml",
-              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Horarios\\MiHorario.cshtml",
-              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\MiHorario.cshtml*",
-              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Horarios\\MiHorario.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Title": "Historial.cshtml",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Asistencia\\Historial.cshtml",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Asistencia\\Historial.cshtml",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Asistencia\\Historial.cshtml",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Asistencia\\Historial.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T22:51:51.864Z",
+              "WhenOpened": "2025-06-27T06:16:27.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 3,
+              "Title": "Marcar.cshtml",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Asistencia\\Marcar.cshtml",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Asistencia\\Marcar.cshtml",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Asistencia\\Marcar.cshtml",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Asistencia\\Marcar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T06:16:02.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AsistenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Controllers\\AsistenciaController.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Controllers\\AsistenciaController.cs",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Controllers\\AsistenciaController.cs",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Controllers\\AsistenciaController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T06:13:52.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AsistenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\AsistenciaController.cs",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\AsistenciaController.cs",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\AsistenciaController.cs",
+              "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\AsistenciaController.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAuwHAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T06:02:40.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Properties\\launchSettings.json",
@@ -155,19 +210,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Taller Industrial Brenes Web",
               "DocumentMoniker": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj",
               "ToolTip": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj",
               "RelativeToolTip": "Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-26T21:33:05.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T21:33:05.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Properties\\launchSettings.json",
@@ -179,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "HorariosController.cs",
               "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Controllers\\HorariosController.cs",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Controllers\\HorariosController.cs",
@@ -187,46 +241,19 @@
               "RelativeToolTip": "Taller Industrial Brenes Web\\Controllers\\HorariosController.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAAAzwI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T19:52:30.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Editar.cshtml",
-              "DocumentMoniker": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Editar.cshtml",
-              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Horarios\\Editar.cshtml",
-              "ToolTip": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Editar.cshtml",
-              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Horarios\\Editar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T19:57:35.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T19:52:30.928Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Index.cshtml",
-              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Horarios\\Index.cshtml",
-              "ToolTip": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Index.cshtml",
-              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Horarios\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Perfil\\Index.cshtml",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Perfil\\Index.cshtml",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Perfil\\Index.cshtml",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Perfil\\Index.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAACwAAACQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T19:52:54.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Administrar.cshtml",
-              "DocumentMoniker": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Administrar.cshtml",
-              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Horarios\\Administrar.cshtml",
-              "ToolTip": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Administrar.cshtml*",
-              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Horarios\\Administrar.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T19:55:45.088Z",
+              "WhenOpened": "2025-06-26T21:51:40.736Z",
               "EditorCaption": ""
             },
             {
@@ -235,16 +262,64 @@
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Home\\Index.cshtml*",
-              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Home\\Index.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-26T21:51:46.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MiHorario.cshtml",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\MiHorario.cshtml",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Horarios\\MiHorario.cshtml",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\MiHorario.cshtml",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Horarios\\MiHorario.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T22:51:51.864Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Horarios\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Editar.cshtml",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Horarios\\Editar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T19:57:35.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Horarios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Index.cshtml",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Horarios\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T19:52:54.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Administrar.cshtml",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Administrar.cshtml",
+              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Horarios\\Administrar.cshtml",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Administrar.cshtml",
+              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Horarios\\Administrar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T19:55:45.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\appsettings.json",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\appsettings.json",
@@ -256,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "HorarioController.cs",
               "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
               "RelativeDocumentMoniker": "Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
@@ -264,12 +339,11 @@
               "RelativeToolTip": "Taller Industrial Brenes API\\Controllers\\HorarioController.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAqwBkAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T22:04:02.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T22:04:02.354Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Program.cs",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Program.cs",
@@ -277,12 +351,11 @@
               "RelativeToolTip": "Taller Industrial Brenes Web\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T21:44:14.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T21:44:14.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Taller Industrial Brenes Web.csproj",
               "DocumentMoniker": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj",
@@ -290,25 +363,11 @@
               "RelativeToolTip": "Taller Industrial Brenes Web\\Taller Industrial Brenes Web.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-26T21:44:39.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T21:44:39.793Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Perfil\\Index.cshtml",
-              "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Perfil\\Index.cshtml",
-              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Perfil\\Index.cshtml",
-              "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Perfil\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACwAAACQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T21:51:40.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\_ViewStart.cshtml",
@@ -316,12 +375,11 @@
               "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T21:51:32.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T21:51:32.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\appsettings.json",
               "RelativeDocumentMoniker": "Taller Industrial Brenes API\\appsettings.json",
@@ -333,11 +391,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Eliminar.cshtml",
-              "DocumentMoniker": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Eliminar.cshtml",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Eliminar.cshtml",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Horarios\\Eliminar.cshtml",
-              "ToolTip": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Eliminar.cshtml",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Eliminar.cshtml",
               "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Horarios\\Eliminar.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -345,11 +403,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Crear.cshtml",
-              "DocumentMoniker": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Crear.cshtml",
               "RelativeDocumentMoniker": "Taller Industrial Brenes Web\\Views\\Horarios\\Crear.cshtml",
-              "ToolTip": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\Views\\Horarios\\Crear.cshtml",
               "RelativeToolTip": "Taller Industrial Brenes Web\\Views\\Horarios\\Crear.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

@@ -1,4 +1,15 @@
-﻿@page
-@model Taller_Industrial_Brenes_Web.Views.Asistencia.IndexModel
-@{
+﻿@{
+    ViewData["Title"] = "Marcar Asistencia";
 }
+
+<h2>Marcar Asistencia</h2>
+
+<form method="post" asp-action="MarcarEntrada">
+    <button type="submit" class="btn btn-success">Marcar Entrada</button>
+</form>
+
+<form method="post" asp-action="MarcarSalida" class="mt-2">
+    <button type="submit" class="btn btn-danger">Marcar Salida</button>
+</form>
+
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary mt-3">Volver al inicio</a>

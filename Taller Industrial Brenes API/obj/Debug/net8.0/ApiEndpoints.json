@@ -33,6 +33,26 @@
   },
   {
     "ContainingType": "Taller_Industrial_Brenes_API.Controllers.AsistenciaController",
+    "Method": "ObtenerTodas",
+    "RelativePath": "api/Asistencia/todas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Taller_Industrial_Brenes_API.Models.AsistenciaModel, Taller Industrial Brenes API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.AsistenciaController",
     "Method": "ObtenerPorUsuario",
     "RelativePath": "api/Asistencia/usuario/{id}",
     "HttpMethod": "GET",
