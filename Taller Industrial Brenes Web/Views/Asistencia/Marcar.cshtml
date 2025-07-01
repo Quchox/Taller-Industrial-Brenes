@@ -2,14 +2,27 @@
     ViewData["Title"] = "Marcar Asistencia";
 }
 
-<h2>Marcar Asistencia</h2>
-
-<form method="post" asp-action="MarcarEntrada">
-    <button type="submit" class="btn btn-success">Marcar Entrada</button>
-</form>
-
-<form method="post" asp-action="MarcarSalida" class="mt-2">
-    <button type="submit" class="btn btn-danger">Marcar Salida</button>
-</form>
-
-<a asp-controller="Home" asp-action="Index" class="btn btn-secondary mt-3">Volver al inicio</a>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-header bg-success text-white">
+                <i class="bi bi-fingerprint me-2"></i>Marcar Asistencia
+            </div>
+            <div class="card-body text-center">
+                <form method="post" asp-action="MarcarEntrada" class="mb-3">
+                    <button type="submit" class="btn btn-success btn-lg w-75">
+                        <i class="bi bi-box-arrow-in-right"></i> Marcar Entrada
+                    </button>
+                </form>
+                <form method="post" asp-action="MarcarSalida">
+                    <button type="submit" class="btn btn-danger btn-lg w-75">
+                        <i class="bi bi-box-arrow-left"></i> Marcar Salida
+                    </button>
+                </form>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary mt-4 w-50">
+                    <i class="bi bi-house-door"></i> Volver al inicio
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

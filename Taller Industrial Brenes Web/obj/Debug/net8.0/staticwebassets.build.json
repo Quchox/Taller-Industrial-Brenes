@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VeLSPpHpwwdvDuG9qG36laM4iCUOJ6UuyaPQKZQW8u0=",
+  "Hash": "OkSrGHH/ETYH0gMq/J49dVRsdRKjmmZA6bKlV+WyQqo=",
   "Source": "Taller Industrial Brenes Web",
   "BasePath": "_content/Taller Industrial Brenes Web",
   "Mode": "Default",
@@ -115,11 +115,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "61n19gt1b8",
-      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "Fingerprint": "5xgg912nxi",
+      "Integrity": "qeZLpmW465RW+goaveYBs8UHhASixWZb4FR3AgCExt0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\wwwroot\\images\\fondo.jpg",
+      "SourceId": "Taller Industrial Brenes Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\wwwroot\\",
+      "BasePath": "_content/Taller Industrial Brenes Web",
+      "RelativePath": "images/fondo#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cx26gh613v",
+      "Integrity": "UOj6QF7d04UvLkf9Bw3D8gBw1d4TsX3OgCiT7sRB5CQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\fondo.jpg"
     },
     {
       "Identity": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\wwwroot\\js\\demo\\chart-area-demo.js",
@@ -2115,7 +2136,7 @@
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico",
+      "Route": "favicon.5xgg912nxi.ico",
       "AssetFile": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2125,7 +2146,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "124446"
         },
         {
           "Name": "Content-Type",
@@ -2133,11 +2154,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"qeZLpmW465RW+goaveYBs8UHhASixWZb4FR3AgCExt0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 00:56:33 GMT"
+          "Value": "Wed, 23 Apr 2025 17:39:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2147,7 +2168,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "61n19gt1b8"
+          "Value": "5xgg912nxi"
         },
         {
           "Name": "label",
@@ -2155,7 +2176,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-qeZLpmW465RW+goaveYBs8UHhASixWZb4FR3AgCExt0="
         }
       ]
     },
@@ -2170,7 +2191,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "124446"
         },
         {
           "Name": "Content-Type",
@@ -2178,11 +2199,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"qeZLpmW465RW+goaveYBs8UHhASixWZb4FR3AgCExt0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 00:56:33 GMT"
+          "Value": "Wed, 23 Apr 2025 17:39:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2192,7 +2213,89 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-qeZLpmW465RW+goaveYBs8UHhASixWZb4FR3AgCExt0="
+        }
+      ]
+    },
+    {
+      "Route": "images/fondo.cx26gh613v.jpg",
+      "AssetFile": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\wwwroot\\images\\fondo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2038599"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UOj6QF7d04UvLkf9Bw3D8gBw1d4TsX3OgCiT7sRB5CQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Jul 2025 17:05:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cx26gh613v"
+        },
+        {
+          "Name": "label",
+          "Value": "images/fondo.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UOj6QF7d04UvLkf9Bw3D8gBw1d4TsX3OgCiT7sRB5CQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/fondo.jpg",
+      "AssetFile": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes Web\\wwwroot\\images\\fondo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2038599"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UOj6QF7d04UvLkf9Bw3D8gBw1d4TsX3OgCiT7sRB5CQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Jul 2025 17:05:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UOj6QF7d04UvLkf9Bw3D8gBw1d4TsX3OgCiT7sRB5CQ="
         }
       ]
     },
@@ -9353,7 +9456,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 21:48:29 GMT"
+          "Value": "Tue, 01 Jul 2025 17:26:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9390,7 +9493,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 21:48:29 GMT"
+          "Value": "Tue, 01 Jul 2025 17:26:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9435,7 +9538,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 21:48:29 GMT"
+          "Value": "Tue, 01 Jul 2025 17:26:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9480,7 +9583,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 21:48:29 GMT"
+          "Value": "Tue, 01 Jul 2025 17:26:04 GMT"
         },
         {
           "Name": "Cache-Control",

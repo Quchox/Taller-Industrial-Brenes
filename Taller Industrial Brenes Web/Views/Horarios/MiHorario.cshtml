@@ -3,40 +3,45 @@
 @{
     ViewData["Title"] = "Mi Horario";
 }
-
-<h2>Mi Horario</h2>
-<a asp-controller="Home" asp-action="Index" class="btn btn-secondary mt-3">
-    ← Volver al inicio
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary mb-3">
+    <i class="bi bi-house-door"></i> Inicio
 </a>
-<a asp-controller="Horarios" asp-action="Administrar" class="btn btn-outline-success mt-3">
-    ← Volver al Menu Horarios
-</a>
-
-@if (Model != null && Model.Count > 0)
-{
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Día</th>
-                <th>Inicio</th>
-                <th>Fin</th>
-                <th>Observaciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var horario in Model)
-            {
-                <tr>
-                    <td>@horario.DiaSemana</td>
-                    <td>@horario.HoraInicio</td>
-                    <td>@horario.HoraFin</td>
-                    <td>@horario.Observaciones</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-else
-{
-    <p>No hay horarios asignados.</p>
-}
+<div class="card shadow-sm mb-4">
+    <div class="card-header bg-info text-white">
+        <i class="bi bi-clock-history me-2"></i>Mi Horario
+    </div>
+    <div class="card-body">
+      
+        <a asp-controller="Horarios" asp-action="Administrar" class="btn btn-outline-success mb-3 ms-2">
+            <i class="bi bi-calendar2-week"></i> Menú Horarios
+        </a>
+        @if (Model != null && Model.Count > 0)
+        {
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Inicio</th>
+                        <th>Fin</th>
+                        <th>Observaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var horario in Model)
+                    {
+                        <tr>
+                            <td><span class="badge bg-info text-dark">@horario.DiaSemana</span></td>
+                            <td>@horario.HoraInicio</td>
+                            <td>@horario.HoraFin</td>
+                            <td>@horario.Observaciones</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="text-muted">No hay horarios asignados.</p>
+        }
+    </div>
+</div>
