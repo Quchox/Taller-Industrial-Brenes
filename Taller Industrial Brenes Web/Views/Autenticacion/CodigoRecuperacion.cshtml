@@ -1,0 +1,52 @@
+﻿@model Taller_Industrial_Brenes_Web.Models.UsuarioModel
+@{
+    ViewData["Title"] = "Codigo de Recuperacion";
+
+    Layout = "_LayoutExterno";
+
+}
+
+<body class="bg-gradient-primary">
+    <div class="container">
+
+        <div class="row d-flex justify-content-center align-items-center vh-100">
+            <div class="col-xl-10 col-lg-12 col-md-9">
+                <div class="card o-hidden border-0 shadow-lg my-lg-5">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image" style="background-image: url('/img/backgrounds/Imagen5.jpg');"></div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Recovery Code</h1>
+                                        <h1 class="h6 text-gray-600 mb-4">Enter the code received by email.</h1>
+                                    </div>
+
+                                    @if (ViewBag.Msj != null)
+                                    {
+                                        <div class="alert alert-danger text-center">@ViewBag.Msj</div>
+                                    }
+
+                                    <form asp-action="CodigoRecuperacion" asp-controller="Autenticacion" method="post">
+                                        <div class="form-group">
+                                            <input type="email" name="correo" class="form-control input-lg" placeholder="Email" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="codigo" class="form-control input-lg" placeholder="Code" required />
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">Check code</button>
+                                    </form>
+
+                                    <hr>
+                                    <div class="text-center">
+                                        <a class="small" asp-controller="Cuenta" asp-action="Login">Already have an account? Login!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

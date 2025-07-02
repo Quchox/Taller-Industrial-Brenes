@@ -35,10 +35,27 @@ namespace Taller_Industrial_Brenes_Web.Controllers
             if (response.IsSuccessStatusCode)
             {
                 var usuario = await response.Content.ReadFromJsonAsync<UsuarioModel>();
-                TempData["UsuarioNombre"] = usuario?.Nombre;
-                TempData["RolID"] = usuario?.RolID.ToString();
-                TempData.Keep("RolID");
-                return RedirectToAction("Index", "Home");
+
+                if (usuario != null)
+                {
+                    HttpContext.Session.SetString("Nombre", usuario.Nombre);
+                    HttpContext.Session.SetString("RolID", usuario.RolID.ToString());
+
+                    // Redirección según el RolID
+                    if (usuario.RolID == 2)
+                    {
+                        return RedirectToAction("Inicio", "Home");
+                    }
+                    else if (usuario.RolID == 1)
+                    {
+                        return RedirectToAction("ListadoAdmin", "Clientes");
+                    }
+                    else
+                    {
+                        // Si no es ninguno de los roles esperados
+                        return RedirectToAction("Login");
+                    }
+                }
             }
 
             ViewBag.Error = "Correo o contraseña inválidos";

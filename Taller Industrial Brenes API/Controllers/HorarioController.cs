@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Taller_Industrial_Brenes_API.Models;

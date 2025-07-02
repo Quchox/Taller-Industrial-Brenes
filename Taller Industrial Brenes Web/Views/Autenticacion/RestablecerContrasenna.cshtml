@@ -1,0 +1,58 @@
+﻿@model Taller_Industrial_Brenes_Web.Models.UsuarioModel
+@{
+    ViewData["Title"] = "Restablecer Contraseña";
+
+    Layout = "_LayoutExterno";
+
+}
+
+<body class="bg-gradient-primary">
+    <div class="container">
+
+        <div class="row d-flex justify-content-center align-items-center vh-100">
+            <div class="col-xl-10 col-lg-12 col-md-9">
+                <div class="card o-hidden border-0 shadow-lg my-lg-5">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image" style="background-image: url('/img/backgrounds/Imagen3.jpg');"></div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Reset Password</h1>
+                                        <h1 class="h6 text-gray-600 mb-4">Enter your new password.</h1>
+                                    </div>
+                                    @if (ViewBag.Msj != null)
+                                    {
+                                        <div class="alert alert-danger text-center">@ViewBag.Msj</div>
+                                    }
+
+                                    <form asp-action="RestablecerContrasenna" asp-controller="Autenticacion" method="post">
+                                        <div class="form-group">
+                                            <input asp-for="Contrasenna" class="form-control input-lg" type="password" placeholder="New Password" required />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input name="ConfirmarContrasenna" class="form-control input-lg" type="password" placeholder="Confirm password" required />
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">Reset</button>
+                                    </form>
+
+                                    <hr>
+                                    <div class="text-center">
+                                        <a class="small" asp-controller="Cuenta" asp-action="Login">Already have an account? Login!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/js/sb-admin-2.min.js"></script>
+</body>
