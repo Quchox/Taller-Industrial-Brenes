@@ -1,10 +1,7 @@
 
 using Microsoft.AspNetCore.Mvc;
-using System.Data.SqlClient;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using Taller_Industrial_Brenes_API.Models;
 
 namespace Taller_Industrial_Brenes_API.Controllers
@@ -102,5 +99,43 @@ namespace Taller_Industrial_Brenes_API.Controllers
                 return BadRequest($"Error: {ex.Message}");
             }
         }
+
+
+
+
+        [HttpGet("todas")]
+        public async Task<ActionResult<List<AsistenciaModel>>> ObtenerTodas()
+        {
+            var lista = new List<AsistenciaModel>();
+
+            using SqlConnection conn = new SqlConnection(_connectionString);
+            using SqlCommand comando = new SqlCommand("ListarAsistenciaCompleta", conn); 
+            comando.CommandType = CommandType.StoredProcedure;
+
+            try
+            {
+                await conn.OpenAsync();
+                using var reader = await comando.ExecuteReaderAsync();
+                while (await reader.ReadAsync())
+                {
+                    lista.Add(new AsistenciaModel
+                    {
+                        AsistenciaID = reader.GetInt64(0),
+                        UsuarioID = reader.GetInt64(1),
+                        Fecha = reader.GetDateTime(2),
+                        HoraEntrada = reader.IsDBNull(3) ? null : reader.GetTimeSpan(3),
+                        HoraSalida = reader.IsDBNull(4) ? null : reader.GetTimeSpan(4),
+                        Estado = reader.IsDBNull(5) ? null : reader.GetString(5)
+                    });
+                }
+
+                return Ok(lista);
+            }
+            catch (SqlException ex)
+            {
+                return BadRequest($"Error: {ex.Message}");
+            }
+        }
+
     }
 }

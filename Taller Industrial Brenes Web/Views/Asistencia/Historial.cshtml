@@ -1,0 +1,61 @@
+﻿@model List<Taller_Industrial_Brenes_Web.Models.AsistenciaModel>
+
+@{
+    ViewData["Title"] = "Historial de Asistencia";
+}
+
+<div class="card shadow-sm mb-4">
+    <div class="card-header bg-info text-white">
+        <i class="bi bi-clock-history me-2"></i>Historial de Asistencia
+    </div>
+    <div class="card-body">
+        @if (Model != null && Model.Count > 0)
+        {
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Entrada</th>
+                            <th>Salida</th>
+                            <th>Estado</th>
+                            <th>UsuarioID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Fecha.ToString("yyyy-MM-dd")</td>
+                                <td>@(item.HoraEntrada?.ToString(@"hh\:mm") ?? "-")</td>
+                                <td>@(item.HoraSalida?.ToString(@"hh\:mm") ?? "-")</td>
+                                <td>
+                                    @if (item.Estado == "Presente")
+                                    {
+                                        <span class="badge bg-success"><i class="bi bi-check-circle"></i> Presente</span>
+                                    }
+                                    else if (item.Estado == "Ausente")
+                                    {
+                                        <span class="badge bg-danger"><i class="bi bi-x-circle"></i> Ausente</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-secondary">@item.Estado</span>
+                                    }
+                                </td>
+                                <td>@item.UsuarioID</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <p class="text-muted">No hay registros de asistencia disponibles.</p>
+        }
+        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary mt-3">
+            <i class="bi bi-house-door"></i> Volver al inicio
+        </a>
+    </div>
+</div>

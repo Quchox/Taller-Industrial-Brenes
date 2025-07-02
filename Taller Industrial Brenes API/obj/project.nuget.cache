@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bd15RZEIBpk=",
+  "dgSpecHash": "7dZGnq3YYf8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\branb\\source\\repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
+  "projectFilePath": "C:\\Users\\branb\\Source\\Repos\\Taller-Industrial-Brenes\\Taller Industrial Brenes API\\Taller Industrial Brenes API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\branb\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\branb\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

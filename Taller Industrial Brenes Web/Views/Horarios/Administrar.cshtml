@@ -1,0 +1,52 @@
+@model List<Taller_Industrial_Brenes_Web.Models.HorarioModel>
+
+@{
+    ViewData["Title"] = "Administrar Horarios";
+}
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary mb-3">
+    <i class="bi bi-house-door"></i> Inicio
+</a>
+<div class="card shadow-sm mb-4">
+    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+
+        <span><i class="bi bi-calendar2-week me-2"></i>Administrar Horarios</span>
+        <div>
+            <a class="btn btn-light btn-sm me-2" asp-action="Crear"><i class="bi bi-plus-circle"></i> Agregar Horario</a>
+            <a class="btn btn-outline-light btn-sm" asp-controller="Horarios" asp-action="MiHorario"><i class="bi bi-person-lines-fill"></i> Ver Mi Horario</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>UsuarioID</th>
+                    <th>Día</th>
+                    <th>Inicio</th>
+                    <th>Fin</th>
+                    <th>Observaciones</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.UsuarioID</td>
+                        <td><span class="badge bg-info text-dark">@item.DiaSemana</span></td>
+                        <td>@item.HoraInicio</td>
+                        <td>@item.HoraFin</td>
+                        <td>@item.Observaciones</td>
+                        <td>
+                            <a asp-action="Editar" asp-route-id="@item.HorarioID" class="btn btn-sm btn-outline-warning me-1">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+                            <a asp-action="Eliminar" asp-route-id="@item.HorarioID" class="btn btn-sm btn-outline-danger">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

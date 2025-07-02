@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Taller Industrial Brenes Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+882cbd4f7ee0261139728960e24354e4911d2a3a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4da924665dce39bc41c8c44773e2f05bc7646faf")]
 [assembly: System.Reflection.AssemblyProductAttribute("Taller Industrial Brenes Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Taller Industrial Brenes Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

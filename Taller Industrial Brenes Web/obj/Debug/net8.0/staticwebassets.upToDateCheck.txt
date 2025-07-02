@@ -1,6 +1,7 @@
 wwwroot\css\sb-admin-2.css
 wwwroot\css\sb-admin-2.min.css
 wwwroot\favicon.ico
+wwwroot\images\fondo.jpg
 wwwroot\js\demo\chart-area-demo.js
 wwwroot\js\demo\chart-bar-demo.js
 wwwroot\js\demo\chart-pie-demo.js

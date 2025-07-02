@@ -1,0 +1,34 @@
+@model Taller_Industrial_Brenes_Web.Models.HorarioModel
+
+@{
+    ViewData["Title"] = "Eliminar Horario";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card border-danger shadow-sm">
+            <div class="card-header bg-danger text-white">
+                <i class="bi bi-exclamation-triangle me-2"></i>Eliminar Horario
+            </div>
+            <div class="card-body">
+                <h5 class="mb-3">¿Está seguro que desea eliminar este horario?</h5>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item"><strong>UsuarioID:</strong> @Model.UsuarioID</li>
+                    <li class="list-group-item"><strong>Día:</strong> @Model.DiaSemana</li>
+                    <li class="list-group-item"><strong>Hora Inicio:</strong> @Model.HoraInicio</li>
+                    <li class="list-group-item"><strong>Hora Fin:</strong> @Model.HoraFin</li>
+                    <li class="list-group-item"><strong>Observaciones:</strong> @Model.Observaciones</li>
+                </ul>
+                <form asp-action="Eliminar">
+                    <input type="hidden" asp-for="HorarioID" />
+                    <button type="submit" class="btn btn-danger">
+                        <i class="bi bi-trash"></i> Eliminar
+                    </button>
+                    <a asp-action="Administrar" class="btn btn-secondary ms-2">
+                        <i class="bi bi-x-circle"></i> Cancelar
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -42,7 +42,7 @@
                         <div class="form-floating">
                             <label>Rol</label>
                             <input type="text" class="form-control input-lg"
-                                   value="@(Model.RolID == 1 ? "Administrador" : Model.RolID == 2 ? "Usuario" : "Desconocido")"
+                                   value="@(Model.RolID == 1 ? "Administrador" : Model.RolID == 2 ? "Usuario" : Model.RolID == 3 ? "Empleado" : "Desconocido")"
                                    disabled>
                         </div>
                     </div>
