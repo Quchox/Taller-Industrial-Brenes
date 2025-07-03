@@ -98,6 +98,149 @@
         }
       }
     },
+    "/Autenticacion/RestablecerContrasenna": {
+      "put": {
+        "tags": [
+          "Autenticacion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Autenticacion/ObtenerUsuarioPorCorreo/{correo}": {
+      "get": {
+        "tags": [
+          "Autenticacion"
+        ],
+        "parameters": [
+          {
+            "name": "correo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Clientes/ListadoAdmin": {
+      "get": {
+        "tags": [
+          "Clientes"
+        ],
+        "parameters": [
+          {
+            "name": "UsuarioID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Clientes/DesactivarUsuario": {
+      "put": {
+        "tags": [
+          "Clientes"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int64"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int64"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "integer",
+                "format": "int64"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Clientes/ActivarUsuario": {
+      "put": {
+        "tags": [
+          "Clientes"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int64"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int64"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "integer",
+                "format": "int64"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Horario/Crear": {
       "post": {
         "tags": [
@@ -366,36 +509,36 @@
     "schemas": {
       "HorarioModel": {
         "required": [
-          "diaSemana",
-          "horaFin",
-          "horaInicio",
-          "usuarioID"
+          "DiaSemana",
+          "HoraFin",
+          "HoraInicio",
+          "UsuarioID"
         ],
         "type": "object",
         "properties": {
-          "horarioID": {
+          "HorarioID": {
             "type": "integer",
             "format": "int32"
           },
-          "usuarioID": {
+          "UsuarioID": {
             "minimum": 1,
             "type": "integer",
             "format": "int64"
           },
-          "diaSemana": {
+          "DiaSemana": {
             "minLength": 1,
             "pattern": "^(Lunes|Martes|Miércoles|Miercoles|Jueves|Viernes|Sábado|Sabado|Domingo)$",
             "type": "string"
           },
-          "horaInicio": {
+          "HoraInicio": {
             "type": "string",
             "format": "date-span"
           },
-          "horaFin": {
+          "HoraFin": {
             "type": "string",
             "format": "date-span"
           },
-          "observaciones": {
+          "Observaciones": {
             "type": "string",
             "nullable": true
           }
@@ -405,11 +548,11 @@
       "LoginRequestModel": {
         "type": "object",
         "properties": {
-          "correo": {
+          "Correo": {
             "type": "string",
             "nullable": true
           },
-          "contrasenna": {
+          "Contrasenna": {
             "type": "string",
             "nullable": true
           }
@@ -419,23 +562,23 @@
       "ProductoModel": {
         "type": "object",
         "properties": {
-          "productoID": {
+          "ProductoID": {
             "type": "integer",
             "format": "int64"
           },
-          "nombre": {
+          "Nombre": {
             "type": "string",
             "nullable": true
           },
-          "descripcion": {
+          "Descripcion": {
             "type": "string",
             "nullable": true
           },
-          "stock": {
+          "Stock": {
             "type": "integer",
             "format": "int32"
           },
-          "precio": {
+          "Precio": {
             "type": "number",
             "format": "double"
           }
@@ -445,52 +588,64 @@
       "UsuarioModel": {
         "type": "object",
         "properties": {
-          "usuarioID": {
+          "UsuarioID": {
             "type": "integer",
             "format": "int64"
           },
-          "identificacion": {
+          "Identificacion": {
             "type": "string",
             "nullable": true
           },
-          "nombre": {
+          "Nombre": {
             "type": "string",
             "nullable": true
           },
-          "apellidoPaterno": {
+          "ApellidoPaterno": {
             "type": "string",
             "nullable": true
           },
-          "apellidoMaterno": {
+          "ApellidoMaterno": {
             "type": "string",
             "nullable": true
           },
-          "correo": {
+          "Correo": {
             "type": "string",
             "nullable": true
           },
-          "contrasenna": {
+          "Contrasenna": {
             "type": "string",
             "nullable": true
           },
-          "tieneContrasennaTemp": {
+          "TieneContrasennaTemp": {
             "type": "boolean",
             "nullable": true
           },
-          "fechaVencimientoTemp": {
+          "FechaVencimientoTemp": {
             "type": "string",
             "format": "date-time",
             "nullable": true
           },
-          "estado": {
+          "Estado": {
             "type": "boolean"
           },
-          "rolID": {
+          "RolID": {
             "type": "integer",
             "format": "int64"
+          },
+          "Token": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "oauth2": {
+        "type": "apiKey",
+        "description": "Standard Authorization header using the Bearer scheme",
+        "name": "Authorization",
+        "in": "header"
       }
     }
   }

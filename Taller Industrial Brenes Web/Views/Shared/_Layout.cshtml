@@ -56,12 +56,21 @@
                     Administrador
                 </div>
 
-                <li class="nav-item">
-                    <a class="nav-link collapsed" asp-controller="Clientes" asp-action="ListadoAdmin">
-                        <i class="fas fa-users"></i>
-                        <span>Clientes</span>
-                    </a>
-                </li>
+                 <!-- Clientes -->
+    <li class="nav-item">
+        <a class="nav-link" asp-controller="Clientes" asp-action="ListadoAdmin">
+            <i class="fas fa-users"></i>
+            <span>Clientes</span>
+        </a>
+    </li>
+
+    <!-- Inventario -->
+    <li class="nav-item">
+        <a class="nav-link" asp-controller="Inventario" asp-action="Index">
+            <i class="fas fa-boxes"></i>
+            <span>Inventario</span>
+        </a>
+    </li>
 
                 <hr class="sidebar-divider">
             }
