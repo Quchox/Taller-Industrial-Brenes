@@ -20,7 +20,6 @@ END
 GO
 
 -- ========================================
--- SP: MarcarEntrada con validación contra horarios
 ALTER PROCEDURE [dbo].[MarcarEntrada]
     @UsuarioID BIGINT,
     @HoraEntrada TIME
@@ -30,35 +29,50 @@ BEGIN
     SET LANGUAGE Spanish;
 
     DECLARE @Hoy DATE = CAST(GETDATE() AS DATE);
-    DECLARE @DiaSemanaRaw VARCHAR(20) = DATENAME(WEEKDAY, @Hoy);
-    DECLARE @DiaSemana VARCHAR(20);
+    DECLARE @DiaActualRaw VARCHAR(20) = DATENAME(WEEKDAY, @Hoy);
+    DECLARE @DiaActual VARCHAR(20);
+    DECLARE @DiaAnterior VARCHAR(20);
     DECLARE @HoraInicio TIME;
     DECLARE @Estado VARCHAR(50);
 
-    -- Normalización de nombre del día
-    SET @DiaSemana = 
-        CASE 
-            WHEN @DiaSemanaRaw = 'Lunes' THEN 'Lunes'
-            WHEN @DiaSemanaRaw = 'Martes' THEN 'Martes'
-            WHEN @DiaSemanaRaw IN ('Miércoles', 'Miercoles') THEN 'Miercoles'
-            WHEN @DiaSemanaRaw = 'Jueves' THEN 'Jueves'
-            WHEN @DiaSemanaRaw = 'Viernes' THEN 'Viernes'
-            WHEN @DiaSemanaRaw IN ('Sábado', 'Sabado') THEN 'Sabado'
-            WHEN @DiaSemanaRaw = 'Domingo' THEN 'Domingo'
-            ELSE @DiaSemanaRaw
+    -- Normalizar días
+    SET @DiaActual = CASE 
+        WHEN @DiaActualRaw = 'Lunes' THEN 'Lunes'
+        WHEN @DiaActualRaw = 'Martes' THEN 'Martes'
+        WHEN @DiaActualRaw IN ('Miércoles', 'Miercoles') THEN 'Miercoles'
+        WHEN @DiaActualRaw = 'Jueves' THEN 'Jueves'
+        WHEN @DiaActualRaw = 'Viernes' THEN 'Viernes'
+        WHEN @DiaActualRaw IN ('Sábado', 'Sabado') THEN 'Sabado'
+        WHEN @DiaActualRaw = 'Domingo' THEN 'Domingo'
+        ELSE @DiaActualRaw
+    END;
+
+    -- Obtener día anterior
+    SET @DiaAnterior = 
+        CASE @DiaActual
+            WHEN 'Lunes' THEN 'Domingo'
+            WHEN 'Martes' THEN 'Lunes'
+            WHEN 'Miercoles' THEN 'Martes'
+            WHEN 'Jueves' THEN 'Miercoles'
+            WHEN 'Viernes' THEN 'Jueves'
+            WHEN 'Sabado' THEN 'Viernes'
+            WHEN 'Domingo' THEN 'Sabado'
         END;
 
-    -- Validación si ya existe asistencia para hoy
+    -- Validar si ya marcó entrada
     IF EXISTS (SELECT 1 FROM Asistencia WHERE UsuarioID = @UsuarioID AND Fecha = @Hoy)
     BEGIN
         RAISERROR('Ya se registró la entrada para hoy.', 16, 1);
         RETURN;
     END
 
-    -- Obtener hora de inicio del horario
+    -- Buscar horario válido (mismo día o anterior con cruce)
     SELECT TOP 1 @HoraInicio = HoraInicio
     FROM Horarios
-    WHERE UsuarioID = @UsuarioID AND DiaSemana = @DiaSemana;
+    WHERE UsuarioID = @UsuarioID AND (
+        (DiaSemana = @DiaActual AND HoraInicio < HoraFin AND @HoraEntrada BETWEEN HoraInicio AND HoraFin) OR
+        (DiaSemana = @DiaAnterior AND HoraInicio > HoraFin AND @HoraEntrada <= HoraFin)
+    );
 
     -- Determinar estado
     IF @HoraInicio IS NULL
@@ -73,20 +87,7 @@ BEGIN
     VALUES (@UsuarioID, @Hoy, @HoraEntrada, @Estado);
 END
 GO
--- SP: Listar asistencias por usuario
-IF OBJECT_ID('dbo.ListarAsistenciaPorUsuario', 'P') IS NOT NULL
-    DROP PROCEDURE dbo.ListarAsistenciaPorUsuario;
-GO
 
-CREATE PROCEDURE ListarAsistenciaPorUsuario
-    @UsuarioID BIGINT
-AS
-BEGIN
-    SELECT * FROM Asistencia
-    WHERE UsuarioID = @UsuarioID
-    ORDER BY Fecha DESC;
-END
-GO
 
 =========================================
 CREATE PROCEDURE ListarAsistenciaCompleta
