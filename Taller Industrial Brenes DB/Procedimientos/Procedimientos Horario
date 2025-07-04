@@ -1,4 +1,4 @@
-ALTER PROCEDURE CrearHorario
+ALTER PROCEDURE [dbo].[CrearHorario]
     @UsuarioID BIGINT,
     @DiaSemana VARCHAR(10),
     @HoraInicio TIME,
@@ -17,27 +17,43 @@ BEGIN
         RETURN
     END
 
-    -- 2. Validar traslape de horarios
+    -- 2. Validar traslape incluso si cruza medianoche
     IF EXISTS (
         SELECT 1
         FROM Horarios
         WHERE UsuarioID = @UsuarioID
           AND DiaSemana = @DiaSemana
           AND (
-                (@HoraInicio BETWEEN HoraInicio AND HoraFin)
-             OR (@HoraFin BETWEEN HoraInicio AND HoraFin)
-             OR (HoraInicio BETWEEN @HoraInicio AND @HoraFin)
+              -- Horario normal
+              (
+                @HoraInicio < @HoraFin AND
+                (
+                    (HoraInicio <= @HoraInicio AND HoraFin > @HoraInicio) OR
+                    (HoraInicio < @HoraFin AND HoraFin >= @HoraFin) OR
+                    (@HoraInicio <= HoraInicio AND @HoraFin >= HoraFin)
+                )
               )
+              OR
+              -- Horario nocturno
+              (
+                @HoraInicio > @HoraFin AND
+                (
+                    (HoraInicio >= @HoraInicio OR HoraFin <= @HoraFin) OR
+                    (@HoraInicio <= HoraInicio AND HoraFin <= @HoraFin)
+                )
+              )
+          )
     )
     BEGIN
-        RAISERROR('Ya existe un horario para este usuario que se traslapa en ese día.', 16, 1)
+        RAISERROR('Ya existe un horario traslapado para ese día.', 16, 1)
         RETURN
     END
 
-    -- 3. Insertar si pasa validaciones
+    -- 3. Insertar horario válido (no se valida orden)
     INSERT INTO Horarios (UsuarioID, DiaSemana, HoraInicio, HoraFin, Observaciones)
     VALUES (@UsuarioID, @DiaSemana, @HoraInicio, @HoraFin, @Observaciones)
 END
+
 -- ==============================
 CREATE PROCEDURE ObtenerHorariosPorUsuario
     @UsuarioID BIGINT
