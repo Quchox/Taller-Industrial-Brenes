@@ -87,7 +87,81 @@ BEGIN
     VALUES (@UsuarioID, @Hoy, @HoraEntrada, @Estado);
 END
 GO
+=========================================
+ALTER PROCEDURE [dbo].[MarcarSalida]
+    @UsuarioID BIGINT,
+    @HoraSalida TIME
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SET LANGUAGE Spanish;
 
+    DECLARE @Hoy DATE = CAST(GETDATE() AS DATE);
+    DECLARE @DiaActualRaw VARCHAR(20) = DATENAME(WEEKDAY, @Hoy);
+    DECLARE @DiaActual VARCHAR(20);
+    DECLARE @DiaAnterior VARCHAR(20);
+
+    -- Normalizar nombres de día
+    SET @DiaActual = CASE 
+        WHEN @DiaActualRaw = 'Lunes' THEN 'Lunes'
+        WHEN @DiaActualRaw = 'Martes' THEN 'Martes'
+        WHEN @DiaActualRaw IN ('Miércoles', 'Miercoles') THEN 'Miercoles'
+        WHEN @DiaActualRaw = 'Jueves' THEN 'Jueves'
+        WHEN @DiaActualRaw = 'Viernes' THEN 'Viernes'
+        WHEN @DiaActualRaw IN ('Sábado', 'Sabado') THEN 'Sabado'
+        WHEN @DiaActualRaw = 'Domingo' THEN 'Domingo'
+        ELSE @DiaActualRaw
+    END;
+
+    SET @DiaAnterior = 
+        CASE @DiaActual
+            WHEN 'Lunes' THEN 'Domingo'
+            WHEN 'Martes' THEN 'Lunes'
+            WHEN 'Miercoles' THEN 'Martes'
+            WHEN 'Jueves' THEN 'Miercoles'
+            WHEN 'Viernes' THEN 'Jueves'
+            WHEN 'Sabado' THEN 'Viernes'
+            WHEN 'Domingo' THEN 'Sabado'
+    END;
+
+    -- Determinar si el horario actual del usuario es nocturno (inicio > fin)
+    DECLARE @EsHorarioNocturno BIT = 0;
+
+    IF EXISTS (
+        SELECT 1
+        FROM Horarios
+        WHERE UsuarioID = @UsuarioID 
+          AND DiaSemana = @DiaAnterior
+          AND HoraInicio > HoraFin
+          AND @HoraSalida <= HoraFin
+    )
+    BEGIN
+        SET @EsHorarioNocturno = 1;
+    END
+
+    DECLARE @FechaEntrada DATE;
+
+    IF @EsHorarioNocturno = 1
+        SET @FechaEntrada = DATEADD(DAY, -1, @Hoy);  -- marcar salida para la entrada del día anterior
+    ELSE
+        SET @FechaEntrada = @Hoy;
+
+    -- Validar existencia de entrada
+    IF NOT EXISTS (
+        SELECT 1 
+        FROM Asistencia 
+        WHERE UsuarioID = @UsuarioID AND Fecha = @FechaEntrada
+    )
+    BEGIN
+        RAISERROR('No hay entrada registrada para el día correspondiente.', 16, 1);
+        RETURN;
+    END
+
+    -- Registrar la salida
+    UPDATE Asistencia
+    SET HoraSalida = @HoraSalida
+    WHERE UsuarioID = @UsuarioID AND Fecha = @FechaEntrada;
+END
 
 =========================================
 CREATE PROCEDURE ListarAsistenciaCompleta
