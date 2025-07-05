@@ -23,37 +23,69 @@ namespace Taller_Industrial_Brenes_Web.Controllers
             return View();
         }
 
+        // POST: /Asistencia/MarcarEntrada
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> MarcarEntrada()
         {
             var cliente = _httpClientFactory.CreateClient();
-            var json = JsonSerializer.Serialize(new { UsuarioID = 6, HoraEntrada = DateTime.Now.ToString("HH:mm:ss") });
-            var contenido = new StringContent(json, Encoding.UTF8, "application/json");
+            var payload = new
+            {
+                UsuarioID = 6, // aquí podrías tomarlo de tu sesión o claims
+                HoraEntrada = DateTime.Now.ToString("HH:mm:ss")
+            };
+            var contenido = new StringContent(
+                JsonSerializer.Serialize(payload),
+                Encoding.UTF8,
+                "application/json");
 
-            var response = await cliente.PostAsync(_config["ApiUrl"] + "/api/Asistencia/marcar-entrada", contenido);
+            var response = await cliente.PostAsync(
+                $"{_config["ApiUrl"]}/api/Asistencia/marcar-entrada",
+                contenido);
 
             if (!response.IsSuccessStatusCode)
+            {
                 ModelState.AddModelError(string.Empty, "Error al marcar entrada.");
+                // volvemos a la misma vista para mostrar el error
+                return View("Marcar");
+            }
 
-            return RedirectToAction("Index", "Home");
+            TempData["Success"] = "Entrada registrada correctamente.";
+            return RedirectToAction("Historial");
         }
 
+        // POST: /Asistencia/MarcarSalida
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> MarcarSalida()
         {
             var cliente = _httpClientFactory.CreateClient();
-            var json = JsonSerializer.Serialize(new { UsuarioID = 6, HoraSalida = DateTime.Now.ToString("HH:mm:ss") });
-            var contenido = new StringContent(json, Encoding.UTF8, "application/json");
+            var payload = new
+            {
+                UsuarioID = 6,
+                HoraSalida = DateTime.Now.ToString("HH:mm:ss")
+            };
+            var contenido = new StringContent(
+                JsonSerializer.Serialize(payload),
+                Encoding.UTF8,
+                "application/json");
 
-            var response = await cliente.PostAsync(_config["ApiUrl"] + "/api/Asistencia/marcar-salida", contenido);
+            var response = await cliente.PostAsync(
+                $"{_config["ApiUrl"]}/api/Asistencia/marcar-salida",
+                contenido);
 
             if (!response.IsSuccessStatusCode)
+            {
                 ModelState.AddModelError(string.Empty, "Error al marcar salida.");
+                return View("Marcar");
+            }
 
-            return RedirectToAction("Index", "Home");
+            TempData["Success"] = "Salida registrada correctamente.";
+            return RedirectToAction("Historial");
         }
 
-        public async Task<IActionResult> Historial()
+
+        /*public async Task<IActionResult> Historial()
         {
             var cliente = _httpClientFactory.CreateClient();
             var response = await cliente.GetAsync(_config["ApiUrl"] + "/api/Asistencia/usuario/6");
@@ -65,6 +97,25 @@ namespace Taller_Industrial_Brenes_Web.Controllers
             var lista = JsonSerializer.Deserialize<List<AsistenciaModel>>(contenido, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             return View(lista);
+        }*/
+        // GET: /Asistencia/Historial
+        [HttpGet]
+        public async Task<IActionResult> Historial()
+        {
+            var cliente = _httpClientFactory.CreateClient();
+            var response = await cliente.GetAsync(
+                $"{_config["ApiUrl"]}/api/Asistencia/usuario/6");
+
+            if (!response.IsSuccessStatusCode)
+                return View("Error");
+
+            var contenido = await response.Content.ReadAsStringAsync();
+            var lista = JsonSerializer.Deserialize<List<AsistenciaModel>>(
+                contenido,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+            return View(lista);
         }
+
     }
 }

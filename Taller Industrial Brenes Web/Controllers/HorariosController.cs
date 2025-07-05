@@ -64,39 +64,46 @@ namespace Taller_Industrial_Brenes_Web.Controllers
             return RedirectToAction("Administrar");
         }
 
+        [HttpGet]
         public async Task<IActionResult> Editar(int id)
         {
             var cliente = _httpClientFactory.CreateClient();
-            var response = await cliente.GetAsync(_config["ApiUrl"] + $"/Horario/PorID/{id}");
-
-            if (!response.IsSuccessStatusCode)
+            var resp = await cliente.GetAsync($"{_config["ApiUrl"]}/Horario/PorID/{id}");
+            if (!resp.IsSuccessStatusCode)
                 return View("Error", new ErrorViewModel());
 
-            var contenido = await response.Content.ReadAsStringAsync();
-            var horario = JsonSerializer.Deserialize<HorarioModel>(contenido, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            var json = await resp.Content.ReadAsStringAsync();
+            var model = JsonSerializer.Deserialize<HorarioModel>(
+                json,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }
+            );
 
-            return View(horario);
+            return View(model);
         }
 
+        // POST /Horarios/Editar
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Editar(HorarioModel model)
         {
             if (!ModelState.IsValid)
                 return View(model);
 
             var cliente = _httpClientFactory.CreateClient();
-            var contenido = new StringContent(JsonSerializer.Serialize(model), Encoding.UTF8, "application/json");
-            var response = await cliente.PutAsync(_config["ApiUrl"] + "/Horario/Actualizar", contenido);
+            var payload = JsonSerializer.Serialize(model);
+            var contenido = new StringContent(payload, Encoding.UTF8, "application/json");
+            var resp = await cliente.PutAsync($"{_config["ApiUrl"]}/Horario/Actualizar", contenido);
 
-            if (!response.IsSuccessStatusCode)
+            if (!resp.IsSuccessStatusCode)
             {
-                var error = await response.Content.ReadAsStringAsync();
+                var error = await resp.Content.ReadAsStringAsync();
                 ModelState.AddModelError(string.Empty, error);
                 return View(model);
             }
 
             return RedirectToAction("Administrar");
         }
+
 
         public async Task<IActionResult> Eliminar(int id)
         {

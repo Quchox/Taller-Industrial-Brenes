@@ -88,8 +88,8 @@ namespace Taller_Industrial_Brenes_API.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (model.HoraInicio >= model.HoraFin)
-                return BadRequest(new { mensaje = "La hora de inicio debe ser menor que la hora de fin." });
+            /*if (model.HoraInicio >= model.HoraFin)
+                return BadRequest(new { mensaje = "La hora de inicio debe ser menor que la hora de fin." });*/
 
             using var conn = new SqlConnection(_config.GetConnectionString("ConexionBD"));
             using var comando = new SqlCommand("CrearHorario", conn)

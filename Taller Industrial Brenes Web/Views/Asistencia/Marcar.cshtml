@@ -2,27 +2,83 @@
     ViewData["Title"] = "Marcar Asistencia";
 }
 
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card shadow-sm">
-            <div class="card-header bg-success text-white">
-                <i class="bi bi-fingerprint me-2"></i>Marcar Asistencia
-            </div>
-            <div class="card-body text-center">
-                <form method="post" asp-action="MarcarEntrada" class="mb-3">
-                    <button type="submit" class="btn btn-success btn-lg w-75">
-                        <i class="bi bi-box-arrow-in-right"></i> Marcar Entrada
-                    </button>
-                </form>
-                <form method="post" asp-action="MarcarSalida">
-                    <button type="submit" class="btn btn-danger btn-lg w-75">
-                        <i class="bi bi-box-arrow-left"></i> Marcar Salida
-                    </button>
-                </form>
-                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary mt-4 w-50">
-                    <i class="bi bi-house-door"></i> Volver al inicio
-                </a>
-            </div>
+<div class="text-center mb-4">
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    <div asp-validation-summary="All" class="alert alert-danger"></div>
+</div>
+
+<div class="d-grid gap-3">
+    <button class="btn btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalEntrada">
+        <i class="bi bi-box-arrow-in-right me-2"></i>Marcar Entrada
+    </button>
+
+    <button class="btn btn-outline-danger btn-lg" data-bs-toggle="modal" data-bs-target="#modalSalida">
+        <i class="bi bi-box-arrow-right me-2"></i>Marcar Salida
+    </button>
+
+    <a asp-action="Historial" class="btn btn-outline-info btn-lg">
+        <i class="bi bi-clock-history me-2"></i>Ver Historial
+    </a>
+</div>
+
+<!-- Modal Entrada -->
+<div class="modal fade" id="modalEntrada" tabindex="-1" aria-labelledby="modalEntradaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form asp-action="MarcarEntrada" asp-controller="Asistencia" method="post">
+                @Html.AntiForgeryToken()
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEntradaLabel">Confirmar Entrada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Estás seguro de que deseas registrar tu entrada ahora?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Sí, Marcar Entrada</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
+
+<!-- Modal Salida -->
+<div class="modal fade" id="modalSalida" tabindex="-1" aria-labelledby="modalSalidaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form asp-action="MarcarSalida" asp-controller="Asistencia" method="post">
+                @Html.AntiForgeryToken()
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSalidaLabel">Confirmar Salida</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Estás seguro de que deseas registrar tu salida ahora?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-danger">Sí, Marcar Salida</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Si hay error de validación / ModelState, abrir automáticamente el modal correspondiente
+        @* Ejemplo: *@
+        @if (!ViewData.ModelState.IsValid && ViewData.ModelState.ErrorCount > 0)
+        {
+            <text>
+              var hasEntradaError = @ViewData.ModelState.Keys.Contains("MarcarEntrada").ToString().ToLower();
+              if (hasEntradaError) new bootstrap.Modal(document.getElementById('modalEntrada')).show();
+            </text>
+        }
+    </script>
+}
