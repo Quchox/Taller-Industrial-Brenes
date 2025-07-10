@@ -8,7 +8,7 @@ using Microsoft.Data.SqlClient;
 namespace Taller_Industrial_Brenes_API.Controllers.Admin
 {
     [AllowAnonymous]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class ClientesController : Controller
     {
@@ -19,13 +19,12 @@ namespace Taller_Industrial_Brenes_API.Controllers.Admin
 
         }
 
-        [HttpGet]
-        [Route("ListadoAdmin")]
-        public IActionResult ConsultarClientes(long UsuarioID)
+        [HttpGet("listado")]
+        public IActionResult ListadoAdmin([FromQuery] long UsuarioID)
         {
-            using (var context = new SqlConnection(_config.GetSection("ConnectionStrings:ConexionBD").Value))
+            using (var context = new SqlConnection(_config.GetConnectionString("ConexionBD")))
             {
-                var result = context.Query<UsuarioModel>("ConsultarClientes", new { UsuarioID });
+                 var result = context.Query<UsuarioModel>("ConsultarClientes", new { UsuarioID });
 
                 if (result.Any())
                 {
@@ -33,7 +32,7 @@ namespace Taller_Industrial_Brenes_API.Controllers.Admin
                 }
                 else
                 {
-                    return NotFound("No hay clientes registrados en este momento"); // Devuelve un mensaje de error 404
+                    return NotFound("No hay clientes registrados en este momento");
                 }
             }
         }

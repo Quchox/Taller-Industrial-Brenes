@@ -1,5 +1,13 @@
 ﻿@model List<Taller_Industrial_Brenes_Web.Models.UsuarioModel>
 
+@if (TempData["Msj"] != null)
+{
+    <div class="alert alert-success mt-3 text-center">@TempData["Msj"]</div>
+}
+@if (ViewBag.Msj != null)
+{
+    <div class="alert alert-danger mt-3 text-center">@ViewBag.Msj</div>
+}
 <div class="row px-5">
     <div class="col-12">
         <div class="row">
@@ -51,7 +59,7 @@
                                             <form method="post" asp-controller="Clientes" asp-action="DesactivarUsuario" class="d-inline">
                                                 <input type="hidden" name="usuarioID" value="@usuario.UsuarioID" />
                                                 <button type="submit" class="btn btn-sm btn-danger me-1">
-                                                    <i class="fa-solid fa-user-slash"></i> Desactivar Cuenta
+                                                    <i class="fas fa-user-slash"></i> Desactivar Cuenta
                                                 </button>
                                             </form>
                                         }
@@ -60,7 +68,7 @@
                                             <form method="post" asp-controller="Clientes" asp-action="ActivarUsuario" class="d-inline">
                                                 <input type="hidden" name="usuarioID" value="@usuario.UsuarioID" />
                                                 <button type="submit" class="btn btn-sm" style="background-color: #7B9C36; color:white">
-                                                    <i class="fa-solid fa-user-check"></i> Activar Cuenta
+                                                    <i class="fas fa-user-check"></i> Activar Cuenta
                                                 </button>
                                             </form>
                                         }

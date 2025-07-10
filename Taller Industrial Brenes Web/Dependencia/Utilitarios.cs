@@ -18,19 +18,23 @@ namespace Taller_Industrial_Brenes_Web.Dependencia
 
         }
 
-        public HttpResponseMessage ConsultarClientesAdmin(long UsuarioID)
+        public async Task<HttpResponseMessage> ConsultarClientesAdmin(long UsuarioID)
         {
             using (var api = _httpClient.CreateClient())
             {
-                var url = $"{_apiUrl.TrimEnd('/')}/Admin/ListadoAdmin?Id={UsuarioID}";
-                api.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _accessor.HttpContext!.Session.GetString("Token"));
+                var url = $"{_apiUrl.TrimEnd('/')}/Clientes/listado?UsuarioID={UsuarioID}";
+                var token = _accessor.HttpContext!.Session.GetString("Token");
 
-                var response = api.GetAsync(url).Result;
+                if (string.IsNullOrEmpty(token))
+                {
+                    Console.WriteLine("⚠️ Token no encontrado en la sesión.");
+                }
 
-                return response;
+                api.DefaultRequestHeaders.Authorization =
+                    new AuthenticationHeaderValue("Bearer", token);
+
+                return await api.GetAsync(url);
             }
         }
-
-
     }
 }
