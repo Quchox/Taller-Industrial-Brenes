@@ -7,14 +7,14 @@ using Taller_Industrial_Brenes_Web.Models;
 namespace Taller_Industrial_Brenes_Web.Controllers.Admin
 {
 
-    public class ClientesController : Controller
+    public class UsuariosController : Controller
     {
         private readonly IHttpClientFactory _httpClient;
         private readonly IConfiguration _config;
         private readonly IUtilitarios _utilitarios;
         private readonly string _apiUrl;
 
-        public ClientesController(IHttpClientFactory httpClient, IConfiguration config, IUtilitarios utilitarios)
+        public UsuariosController(IHttpClientFactory httpClient, IConfiguration config, IUtilitarios utilitarios)
         {
             _httpClient = httpClient;
             _config = config;
@@ -25,7 +25,7 @@ namespace Taller_Industrial_Brenes_Web.Controllers.Admin
         [HttpGet]
         public async Task<IActionResult> ListadoAdmin()
         {
-            var response = await _utilitarios.ConsultarClientesAdmin(0);
+            var response = await _utilitarios.ConsultarUsuarioAdmin(0);
 
             if (response.IsSuccessStatusCode)
             {
@@ -98,5 +98,32 @@ namespace Taller_Industrial_Brenes_Web.Controllers.Admin
 
             return RedirectToAction("ListadoAdmin");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> ActualizarRol(long usuarioID)
+        {
+            using (var api = _httpClient.CreateClient())
+            {
+                var url = $"{_apiUrl.TrimEnd('/')}/Clientes/ActualizarRol";
+                api.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", HttpContext.Session.GetString("Token"));
+
+                var payload = new { UsuarioID = usuarioID };
+
+                var response = await api.PutAsJsonAsync(url, payload);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var mensaje = await response.Content.ReadAsStringAsync();
+                    TempData["Msj"] = mensaje;
+                }
+                else
+                {
+                    TempData["Msj"] = "Error al actualizar el rol.";
+                }
+            }
+
+            return RedirectToAction("ListadoAdmin");
+        }
+
     }
 }

@@ -4,16 +4,17 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net.Http.Headers;
 using Taller_Industrial_Brenes_API.Models;
 using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace Taller_Industrial_Brenes_API.Controllers.Admin
 {
     [AllowAnonymous]
     [Route("[controller]")]
     [ApiController]
-    public class ClientesController : Controller
+    public class UsuariosController : Controller
     {
         private readonly IConfiguration _config;
-        public ClientesController(IConfiguration config)
+        public UsuariosController(IConfiguration config)
         {
             _config = config;
 
@@ -24,7 +25,7 @@ namespace Taller_Industrial_Brenes_API.Controllers.Admin
         {
             using (var context = new SqlConnection(_config.GetConnectionString("ConexionBD")))
             {
-                 var result = context.Query<UsuarioModel>("ConsultarClientes", new { UsuarioID });
+                var result = context.Query<UsuarioModel>("ConsultarUsuario", new { UsuarioID });
 
                 if (result.Any())
                 {
@@ -74,5 +75,26 @@ namespace Taller_Industrial_Brenes_API.Controllers.Admin
                 }
             }
         }
+
+        [HttpPut]
+        [Route("ActualizarRol")]
+        public IActionResult ActualizarRol([FromBody] RolModel model)
+        {
+            using (var connection = new SqlConnection(_config.GetSection("ConnectionStrings:ConexionBD").Value))
+            {
+                var result = connection.QuerySingle<int>("CambiarRolUsuario", new
+                {
+                    UsuarioID = model.UsuarioID
+                }, commandType: CommandType.StoredProcedure);
+
+                if (result == 1)
+                    return Ok("Rol actualizado correctamente.");
+                else if (result == 0)
+                    return BadRequest("El rol actual no permite cambio.");
+                else // -1
+                    return BadRequest("Usuario no encontrado.");
+            }
+        }
+
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IUtilitarios
     {
-        Task<HttpResponseMessage> ConsultarClientesAdmin(long UsuarioID);
+        Task<HttpResponseMessage> ConsultarUsuarioAdmin(long UsuarioID);
     }
 }

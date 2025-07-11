@@ -18,7 +18,7 @@ namespace Taller_Industrial_Brenes_Web.Dependencia
 
         }
 
-        public async Task<HttpResponseMessage> ConsultarClientesAdmin(long UsuarioID)
+        public async Task<HttpResponseMessage> ConsultarUsuarioAdmin(long UsuarioID)
         {
             using (var api = _httpClient.CreateClient())
             {
@@ -27,7 +27,7 @@ namespace Taller_Industrial_Brenes_Web.Dependencia
 
                 if (string.IsNullOrEmpty(token))
                 {
-                    Console.WriteLine("⚠️ Token no encontrado en la sesión.");
+                    Console.WriteLine("Token no encontrado en la sesión.");
                 }
 
                 api.DefaultRequestHeaders.Authorization =

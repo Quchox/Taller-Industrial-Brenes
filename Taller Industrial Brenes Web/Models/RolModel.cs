@@ -2,7 +2,9 @@
 {
     public class RolModel
     {
+        public long UsuarioID { get; set; }
+
         public long RolID { get; set; }
-        public string NombreRol { get; set; } = string.Empty;
+
     }
 }
