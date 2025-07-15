@@ -48,7 +48,7 @@ namespace Taller_Industrial_Brenes_Web.Controllers
                     }
                     else if (usuario.RolID == 1)
                     {
-                        return RedirectToAction("ListadoAdmin", "Clientes");
+                        return RedirectToAction("ListadoAdmin", "Usuarios");
                     }
                     else
                     {
