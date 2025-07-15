@@ -4,77 +4,81 @@
     ViewData["Title"] = "Inventario - Stock actual";
 }
 
-<h2 class="mt-3 mb-4">Stock de Productos</h2>
+<h2 class="mt-3 mb-4 text-center text-primary fw-bold">Stock de Productos</h2>
 
-<a class="btn btn-outline-danger mb-3" asp-action="Alertas" asp-controller="Inventario">
-    Ver Alertas de Stock Bajo
-</a>
-<a class="btn btn-primary mb-3 me-2" asp-action="Agregar" asp-controller="Inventario">Agregar Producto</a>
+<div class="d-flex justify-content-center gap-3 mb-4">
+    <a class="btn btn-danger shadow-sm px-4 py-2 rounded" asp-action="Alertas" asp-controller="Inventario">
+        <i class="fas fa-exclamation-triangle me-2"></i> Ver Alertas de Stock Bajo
+    </a>
+    <a class="btn btn-primary shadow-sm px-4 py-2 rounded" asp-action="Agregar" asp-controller="Inventario">
+        <i class="fas fa-plus me-2"></i> Agregar Producto
+    </a>
+</div>
 
 @if (TempData["Success"] != null)
 {
-    <div class="alert alert-success">@TempData["Success"]</div>
+    <div class="alert alert-success text-center shadow-sm">@TempData["Success"]</div>
 }
 @if (TempData["Error"] != null)
 {
-    <div class="alert alert-danger">@TempData["Error"]</div>
+    <div class="alert alert-danger text-center shadow-sm">@TempData["Error"]</div>
 }
 
-
-<table class="table table-bordered table-striped">
-    <thead class="table-light">
-        <tr>
-            <th>Nombre</th>
-            <th>Descripción</th>
-            <th>Stock</th>
-            <th>Precio (₡)</th>
-            <th>Acciones</th> <!-- Nueva columna -->
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var producto in Model)
-        {
-            <tr>
-                <td>@producto.Nombre</td>
-                <td>@producto.Descripcion</td>
-                <td>@producto.Stock</td>
-                <td>@producto.Precio.ToString("N2")</td>
-                <td>
-                    <form asp-action="Eliminar" method="post" style="display:inline;">
-                        <input type="hidden" name="productoID" value="@producto.ProductoID" />
-                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmarEliminarModal" data-producto-id="@producto.ProductoID">
-                            Eliminar
-                        </button>
-
-                    </form>
-                </td>
+<div class="table-responsive">
+    <table class="table table-hover table-bordered rounded shadow-sm" style="background: #ffffff;">
+        <thead class="table-primary">
+            <tr class="text-center">
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Stock</th>
+                <th>Precio (₡)</th>
+                <th>Acciones</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var producto in Model)
+            {
+                <tr class="align-middle text-center">
+                    <td>@producto.Nombre</td>
+                    <td>@producto.Descripcion</td>
+                    <td>@producto.Stock</td>
+                    <td>@producto.Precio.ToString("N2")</td>
+                    <td>
+                        <button type="button"
+                                class="btn btn-sm btn-outline-danger shadow-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#confirmarEliminarModal"
+                                data-producto-id="@producto.ProductoID">
+                            <i class="fas fa-trash-alt"></i> Eliminar
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="confirmarEliminarModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content shadow-sm">
             <form id="formEliminar" asp-action="Eliminar" method="post">
-                <div class="modal-header">
+                <div class="modal-header bg-danger text-white">
                     <h5 class="modal-title">Confirmar Eliminación</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     ¿Estás seguro que deseas eliminar este producto?
                 </div>
                 <input type="hidden" id="productoIDModal" name="productoID" />
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                    <button type="button" class="btn btn-secondary shadow-sm" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-danger shadow-sm">Eliminar</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
-
 
 @section Scripts {
     <script>
@@ -86,6 +90,3 @@
         });
     </script>
 }
-
-
-

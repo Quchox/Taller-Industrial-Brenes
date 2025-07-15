@@ -33,6 +33,22 @@
   },
   {
     "ContainingType": "Taller_Industrial_Brenes_API.Controllers.AutenticacionController",
+    "Method": "ObtenerUsuarioPorCorreo",
+    "RelativePath": "Autenticacion/ObtenerUsuarioPorCorreo/{correo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.AutenticacionController",
     "Method": "Registro",
     "RelativePath": "Autenticacion/Registro",
     "HttpMethod": "POST",
@@ -41,6 +57,22 @@
     "Parameters": [
       {
         "Name": "nuevo",
+        "Type": "Taller_Industrial_Brenes_API.Models.UsuarioModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.AutenticacionController",
+    "Method": "RestablecerContrasenna",
+    "RelativePath": "Autenticacion/RestablecerContrasenna",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
         "Type": "Taller_Industrial_Brenes_API.Models.UsuarioModel",
         "IsRequired": true
       }
@@ -201,6 +233,70 @@
         "Name": "model",
         "Type": "Taller_Industrial_Brenes_API.Models.UsuarioModel",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.Admin.UsuariosController",
+    "Method": "ActivarUsuario",
+    "RelativePath": "Usuarios/ActivarUsuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioID",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.Admin.UsuariosController",
+    "Method": "ActualizarRol",
+    "RelativePath": "Usuarios/ActualizarRol",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Taller_Industrial_Brenes_API.Models.RolModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.Admin.UsuariosController",
+    "Method": "DesactivarUsuario",
+    "RelativePath": "Usuarios/DesactivarUsuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioID",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Taller_Industrial_Brenes_API.Controllers.Admin.UsuariosController",
+    "Method": "ListadoAdmin",
+    "RelativePath": "Usuarios/listado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UsuarioID",
+        "Type": "System.Int64",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

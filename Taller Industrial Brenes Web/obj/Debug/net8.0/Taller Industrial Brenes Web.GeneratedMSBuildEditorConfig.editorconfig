@@ -20,8 +20,16 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Autenticacion/CodigoRecuperacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0ZW50aWNhY2lvblxDb2RpZ29SZWN1cGVyYWNpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Autenticacion/RecuperarContrasenna.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0ZW50aWNhY2lvblxSZWN1cGVyYXJDb250cmFzZW5uYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Autenticacion/RestablecerContrasenna.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0ZW50aWNhY2lvblxSZXN0YWJsZWNlckNvbnRyYXNlbm5hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Cuenta/Login.cshtml]
@@ -32,12 +40,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXFJlZ2lzdHJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Home/Inicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmljaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Inventario/Agregar.cshtml]
@@ -60,8 +64,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Shared/_LayoutExterno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRFeHRlcm5vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/Usuarios/ListadoAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTGlzdGFkb0FkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Progra avanzada/Taller Industrial Brenes/Taller Industrial Brenes Web/Views/_ViewImports.cshtml]
