@@ -68,7 +68,7 @@ namespace Taller_Industrial_Brenes_Web.Controllers.Admin
         {
             using (var api = _httpClient.CreateClient())
             {
-                var url = $"{_apiUrl.TrimEnd('/')}/Clientes/DesactivarUsuario";
+                var url = $"{_apiUrl.TrimEnd('/')}/Usuarios/DesactivarUsuario";
                 api.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", HttpContext.Session.GetString("Token"));
 
                 var result = await api.PutAsJsonAsync(url, usuarioID);
@@ -86,7 +86,7 @@ namespace Taller_Industrial_Brenes_Web.Controllers.Admin
         {
             using (var api = _httpClient.CreateClient())
             {
-                var url = $"{_apiUrl.TrimEnd('/')}/Clientes/ActivarUsuario";
+                var url = $"{_apiUrl.TrimEnd('/')}/Usuarios/ActivarUsuario";
                 api.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", HttpContext.Session.GetString("Token"));
 
                 var result = await api.PutAsJsonAsync(url, usuarioID);
@@ -104,7 +104,7 @@ namespace Taller_Industrial_Brenes_Web.Controllers.Admin
         {
             using (var api = _httpClient.CreateClient())
             {
-                var url = $"{_apiUrl.TrimEnd('/')}/Clientes/ActualizarRol";
+                var url = $"{_apiUrl.TrimEnd('/')}/Usuarios/ActualizarRol";
                 api.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", HttpContext.Session.GetString("Token"));
 
                 var payload = new { UsuarioID = usuarioID };

@@ -22,7 +22,7 @@ namespace Taller_Industrial_Brenes_Web.Dependencia
         {
             using (var api = _httpClient.CreateClient())
             {
-                var url = $"{_apiUrl.TrimEnd('/')}/Clientes/listado?UsuarioID={UsuarioID}";
+                var url = $"{_apiUrl.TrimEnd('/')}/Usuarios/listado?UsuarioID={UsuarioID}";
                 var token = _accessor.HttpContext!.Session.GetString("Token");
 
                 if (string.IsNullOrEmpty(token))
